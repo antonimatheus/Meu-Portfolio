@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --font1 :'Ubuntu', sans-serif;
+
+    --color1: #8E2800;
+    --color2: #B64926;
+    --color3: #FFB03B;
+    --color4: #FFF0A5;
+    --color5: #468966;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font1);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+
+#inicioEsquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+#inicioDireito {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 650px;
+    background:linear-gradient(to bottom,var(--color2), var(--color1), var(--color3) 160%);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    color: var(--color4);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li a {
+    margin: 0px 10px ;
+    transition: .3s;
+}
+
+li a:hover {
+    color: var(--color3);
+    transform: translateY(-5px);
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+#web i {
+    color: var(--color3);
+    font-size: 45px;
+    margin: 0px 10px ;
+    transition: .3s;
+    
+}
+
+#web i:hover {
+    color: var(--color4);
+    transform: translateY(-5px);
+}
+
+#hello {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color4);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#antoni {
+    font-size: 23px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    font-size: 4em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    color: var(--color4);
+}
+
+#apresentacion {
+    text-align: right;
+    font-size: 1.2em;
+    margin: 20px;
+    text-indent: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    color: var(--color4);
+}
+
+#imgwebsite {
+    display: flex;
+    margin: 0 auto;
+    width: 33vw;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height:150px;
+    background-color: var(--color3)
+}
+

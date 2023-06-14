@@ -138,7 +138,42 @@ main {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height:150px;
-    background-color: var(--color3)
+    
+    background-color: var(--color3);
 }
 
+#iframe-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    
+    margin: 10px;
+    
+}
+
+.iframes iframe{
+    display: inline-block;
+    width: 32vw;
+    height: 750px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
+}
+
+#imgs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+.imgs img {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+    margin: 10px;
+   
+    
+}

@@ -44,7 +44,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 680px;
+    height: 700px;
     background:linear-gradient(to bottom,var(--color2), var(--color1), var(--color3) 160%);
     border-bottom: 5px groove #ffb13ba8;
 }
@@ -221,7 +221,7 @@ main p {
     width: 570px;
     height: 670px;
     text-align: center;
-    background-color: red;
+    
 }
 
 #f-text {

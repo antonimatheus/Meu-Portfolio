@@ -8,42 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
         <div id="navegacion">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </div>
-
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Cursos</a></li>
-        </ul>
         </nav>
 
         <div id="container">
             <div id="inicioEsquerdo">
                 <p>Olá, eu sou o Antoni 👋</p>
+
                 <div id="title">
                     <h1 id="web">WEB
                         <a href="https://www.linkedin.com/in/antoni-matheus-a5a3b4230/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/antonimatheus" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="#" target="_blank"><i class="fa-solid fa-file"></i></a>
                     </h1>
-            
                     <h1>DEVELOPER</h1>
                 </div>
                 <div id="apresentacion">
                     <p>Tenho 18 anos sou desenvolvedor frontend com 1 ano de experiência trabalhando como freelancer.</p>
                 </div>
             </div>
+
             <div id="inicioDireito">
                 <img id="imgwebsite" src="assets/images/website-setup-animate.svg" alt="website">
             </div>
         </div>
     </header>
-    <main>
 
-        <h1>Projetos</h1>
+    <main>
+        <div id="f-text">
+            <div id="finish-text">
+                <p>Acredito que o Desenvolvimento Web pode ser mais diversificado e inspirador. Com a missão de apresentar as possibilidades do Web Design, estou buscando novas expressões por meio de experimentos e pensamentos.</p>
+            </div>
+        </div>
+
+        <h1 id="projects">Projetos</h1>
+
         <p>Projetos Responsivos e Minimalistas.</p>
 
         <div id="imgs-container">
@@ -70,20 +78,13 @@
                 <p>Projeto em HTML/CSS/JS</p>
                 <h3>Página responsiva para saber o seu IMC com informações</h3>
             </div>
-            
-        </div>
-        
-        <div id="f-text">
-            <div id="finish-text">
-                <p>Acredito que o Web Development pode ser mais diversificado e inspirador. Com a missão de apresentar as possibilidades do Web Design, estou buscando novas expressões por meio de experimentos e pensamentos.</p>
-            </div>
         </div>
         
         <h2>Alguns Exemplos</h2>
+
         <p>Você pode interagir com esses exemplos!</p>
 
         <div id="iframe-container">
-
             <div class="iframes"><iframe src="https://antonimatheus.github.io/Landing-Page/" frameborder="0"></iframe></div>
 
             <div class="iframes"><iframe src="https://antonimatheus.github.io/Minimalist-LoginPage/ " frameborder="0"></iframe></div>
@@ -93,19 +94,23 @@
             <div class="iframes"><iframe src="https://antonimatheus.github.io/Site-Android/" frameborder="0"></iframe></div>
         
             <div class="iframes"><iframe src="https://antonimatheus.github.io/IMC-JS/" frameborder="0"></iframe></div>
-        
-            
         </div>
-        
-        
-
     </main>
+
     <footer>
         <div id="contact">
             <h2>Contato</h2>
+
             <h1>Tem um problema para resolver?</h1>
-            <p>Prepare seu traje espacial e conte-me suas ideias para desenvolver a aplicação dos seus sonhos.</p>
+
+            <p>Prepare seu traje espacial e conte-me suas ideias para desenvolver a aplicação dos seus sonhos!</p>
+
             <a href="#"><i class="fa-solid fa-envelope"></i> antonimatheus789@gmail.com</a>
+        </div>
+        
+        <div id="img-contact">
+            <img src="assets/images/sent-message-animate.svg" alt="mensagem email">
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>

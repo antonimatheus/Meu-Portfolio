@@ -1,13 +1,13 @@
-window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('idNav'); // Replace 'navbar' with the actual ID of your navigation bar
-  var scrollPosition = window.scrollY;
+const navEl = document.querySelector('.navbar');
 
-  if (scrollPosition > 100) { // Change the threshold value as needed
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 56) {
+    navEl.classList.add('navbar-scrolled')
+  } else if (window.scrollY < 56) {
+    navEl.classList.remove('navbar-scrolled')
   }
-});
+})
+
 
 const slider = document.querySelector('#iframe-container iframe');
 

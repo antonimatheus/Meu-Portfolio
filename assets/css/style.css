@@ -56,8 +56,8 @@ nav {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10px;
-    
-    /*background-color: #8e28000a;*/
+
+    /*background-color: var(--color1);*/
     transition: 0.3s ease-in-out;
 }
 
@@ -79,12 +79,15 @@ ul {
 li a {
     margin: 0px 10px ;
     transition: all .25s ease-in-out;
-    border-bottom: 3px solid transparent;
 }
 
 li a:hover {
     color: var(--color3);
-    /*border-bottom: 2px solid var(--color3);*/
+}
+
+.navbar-scrolled {
+    background: black;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 #container {
@@ -269,7 +272,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 100%;
+    height: 102%;
     background:radial-gradient(var(--color2),var(--color1) 75%);
 }
 
@@ -322,7 +325,4 @@ footer a:hover {
     width: 48vw;
 }
 
-.scrolled {
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
-}
+

@@ -31,12 +31,14 @@ html, body {
 #inicioEsquerdo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50vw;
 }
 
 #inicioDireito {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50vw;
 }
 
@@ -49,11 +51,14 @@ header {
 
 nav {
     display: flex;
-    /*position: fixed;*/
+    position: fixed;
+    width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 20px;
-    /*background:#ff933ba1;*/
+    padding: 10px;
+    
+    /*background-color: #8e28000a;*/
+    transition: 0.3s ease-in-out;
 }
 
 nav a {
@@ -66,6 +71,7 @@ nav a {
 
 ul {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     list-style-type: none;
 }
@@ -120,7 +126,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     margin: 0px 20px;
-    font-size: 4em;
+    font-size: 3.8em;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     color: var(--color4);
 }
@@ -314,4 +320,9 @@ footer a:hover {
 #img-contact img {
     display: flex;
     width: 48vw;
+}
+
+.scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
 }

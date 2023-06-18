@@ -52,12 +52,13 @@ header {
 nav {
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 98.7%;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10px;
-
-    /*background-color: var(--color1);*/
+    
+    background:transparent;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
     transition: 0.3s ease-in-out;
 }
 

@@ -19,6 +19,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        width: 100vw;
+        background-color: #8e280088;
     }
     
     #title {
@@ -28,6 +30,7 @@
 
     #apresentacion {
         text-align: center;
+        
     }
 
     #apresentacion p {
@@ -36,6 +39,15 @@
 
     #finish-text p {
         font-size: 30px;
+    }
+
+    #finish-text {
+        background: url(../images/code-typing-animate.svg) no-repeat;
+        background-position: center;
+        background-size: 125vw;
+        background-attachment: fixed;
+        box-shadow: inset 5px 0px 13px rgba(0, 0, 0, .5);
+        background-color: rgba(182, 74, 38, 0.6);
     }
 
     #projects {
@@ -51,7 +63,7 @@
         flex-direction: column;
         align-items: center;
         width: 450px;
-        height: 630px;
+        height: 600px;
     }
 
     .imgs img {
@@ -66,7 +78,7 @@
 
     .iframes iframe{
         width: 400px;
-        height: 650px;
+        height: 800px;
     }
 
     #contact {
@@ -86,12 +98,12 @@
 
 
     #contact h2 {
-        font-size: 35px;
+        font-size: 40px;
         color: var(--color3);
     }
     
     #contact h1 {
-        font-size: 6vw;
+        font-size: 7vw;
         text-align: center;
     }
     

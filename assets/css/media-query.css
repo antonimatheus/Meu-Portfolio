@@ -46,12 +46,21 @@
         background-position: center;
         background-size: 125vw;
         background-attachment: fixed;
-        box-shadow: inset 5px 0px 13px rgba(0, 0, 0, .5);
+        
         background-color: rgba(182, 74, 38, 0.6);
     }
 
     #projects {
         font-size: 7vw;
+        text-align: center;
+    }
+
+    main h2 {
+        text-align: center;
+    }
+
+    main p {
+        text-align: center;
     }
 
     #imgs-container {
@@ -132,7 +141,7 @@
     }
     
     #title {
-        color: red;
+
     }
 
     #inicioEsquerdo {
@@ -142,10 +151,125 @@
         justify-content: center;
         align-items: center;
         gap: 15px;
-        
     }
 
+    #inicioDireito {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        background-color: #8e280088;
+    }
+    
+    #title {
+        font-size: 5.5vw;
+        text-align: justify;
+    }
+
+    #apresentacion {
+        text-align: center;
+    }
+
+    #apresentacion p {
+        font-size: 20px;
+    }
+
+    #finish-text p {
+        font-size: 30px;
+    }
+
+    #finish-text {
+        background: url(../images/code-typing-animate.svg) no-repeat;
+        background-position: center;
+        background-size: 125vw;
+        background-attachment: fixed;
+
+        background-color: rgba(182, 74, 38, 0.6);
+    }
+
+    main h2 {
+        text-align: center;
+    }
+
+    main p {
+        text-align: center;
+    }
+
+    #projects {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+
+    #imgs-container {
+
+    }
+
+    .img-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        height: 600px;
+    }
+
+    .imgs img {
+        max-width: 460px;
+    }
+
+    #iframe-container {
+        /*background-color: red;*/
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .iframes iframe{
+        width: 400px;
+        height: 800px;
+    }
+
+    #contact {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background: url(../images/sent-message-animate.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+        color: var(--color3);
+    }
+    
+    #contact h1 {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    
+    #contact p {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    #contact a {
+        font-size: 18px;
+    }
+
+    #img-contact {
+        display: none;
+    }
+
+    #img-contact img {
+        display: none;
+    }
 }
-
-
-

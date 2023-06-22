@@ -163,7 +163,7 @@
         flex-direction: row;
         justify-content: center;
         width: 100vw;
-        background-color: #8e280088;
+        background-color: rgba(90, 26, 0, 0.5);;
     }
     
     #title {

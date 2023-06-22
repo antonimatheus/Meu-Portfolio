@@ -1,3 +1,13 @@
+const navEl = document.querySelector('#projects')
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 56) {
+    navEl.classList.add('animation')
+  } else if (window.scrollY < 56){
+    navEl.classList.remove('animation')
+  }
+})
+
 
 
 const slider = document.querySelector('#iframe-container iframe');

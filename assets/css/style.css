@@ -55,11 +55,12 @@ header {
 nav {
     display: flex;
     position: fixed;
+    z-index: 1;
     width: 98.7%;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #8E2800;
+    padding: 1px;
+    background-color: rgba(142, 40, 0, 0.5);
 
     /*animation: scroll 10s ease infinite;*/
 }

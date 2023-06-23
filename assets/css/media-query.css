@@ -40,9 +40,9 @@
     }
 
     #finish-text {
-        background: url(../images/code-typing-animate.svg) no-repeat;
+        background: url(../images/Telecommuting-pana.svg) no-repeat;
         background-position: center;
-        background-size: 125vw;
+        background-size: 100vw;
         background-attachment: fixed;
         background-color: rgba(182, 74, 38, 0.6);
     }
@@ -96,30 +96,34 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        background: url(../images/sent-message-animate.svg);
+        background: url(../images/Developer\ activity-pana.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 95vw;
         background-attachment: fixed;
     }
 
     #contact h2 {
         font-size: 40px;
         color: var(--color3);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
     
     #contact h1 {
         font-size: 7vw;
         text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
     
     #contact p {
         font-size: 3.5vw;
         text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
     #contact a {
         font-size: 18px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
     #img-contact {
@@ -175,9 +179,9 @@
     }
 
     #finish-text {
-        background: url(../images/code-typing-animate.svg) no-repeat;
+        background: url(../images/Telecommuting-pana.svg) no-repeat;
         background-position: center;
-        background-size: 125vw;
+        background-size: 95vw;
         background-attachment: fixed;
         background-color: rgba(182, 74, 38, 0.6);
     }
@@ -226,7 +230,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        background: url(../images/sent-message-animate.svg);
+        background: url(../images/Developer\ activity-pana.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

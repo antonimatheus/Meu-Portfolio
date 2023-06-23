@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @media screen and (max-width:800px) {
-
     #inicioEsquerdo {
         display: flex;
         width: 100vw;
@@ -30,7 +29,6 @@
 
     #apresentacion {
         text-align: center;
-        
     }
 
     #apresentacion p {
@@ -46,7 +44,6 @@
         background-position: center;
         background-size: 125vw;
         background-attachment: fixed;
-        
         background-color: rgba(182, 74, 38, 0.6);
     }
 
@@ -106,7 +103,6 @@
         background-attachment: fixed;
     }
 
-
     #contact h2 {
         font-size: 40px;
         color: var(--color3);
@@ -136,13 +132,8 @@
 }
 
 @media screen and (min-width: 800px) and (max-width:1280px) {
-
     header {
         flex-direction: column;
-    }
-    
-    #title {
-
     }
 
     #inicioEsquerdo {
@@ -163,7 +154,7 @@
         flex-direction: row;
         justify-content: center;
         width: 100vw;
-        background-color: rgba(90, 26, 0, 0.5);;
+        background-color: rgba(90, 26, 0, 0.5);
     }
     
     #title {
@@ -188,7 +179,6 @@
         background-position: center;
         background-size: 125vw;
         background-attachment: fixed;
-
         background-color: rgba(182, 74, 38, 0.6);
     }
 
@@ -203,10 +193,6 @@
     #projects {
         font-size: 4.5vw;
         text-align: center;
-    }
-
-    #imgs-container {
-
     }
 
     .img-block {

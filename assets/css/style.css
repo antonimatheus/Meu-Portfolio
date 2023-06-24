@@ -93,8 +93,9 @@ li a:hover {
 
 #container {
     display: flex;
-    height: 100vh;
     flex-direction: row;
+    height: 100vh;
+    
 }
 
 #web i {
@@ -329,9 +330,9 @@ footer a:hover {
 
 .hidden {
     opacity: 0;
-    filter: blur(4px);
+    filter: blur(3.5px);
     transform: translateY(10%);
-    transition: all .8s ease;
+    transition: all .7s ease;
 }
 
 .show {

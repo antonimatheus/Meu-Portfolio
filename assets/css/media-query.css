@@ -42,7 +42,7 @@
     #finish-text {
         background: url(../images/Telecommuting-pana.svg) no-repeat;
         background-position: center;
-        background-size: 100vw;
+        background-size: cover;
         background-attachment: fixed;
         background-color: rgba(182, 74, 38, 0.6);
     }
@@ -99,7 +99,7 @@
         background: url(../images/Developer\ activity-pana.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 95vw;
+        background-size: cover;
         background-attachment: fixed;
     }
 
@@ -181,7 +181,7 @@
     #finish-text {
         background: url(../images/Telecommuting-pana.svg) no-repeat;
         background-position: center;
-        background-size: 95vw;
+        background-size: cover;
         background-attachment: fixed;
         background-color: rgba(182, 74, 38, 0.6);
     }

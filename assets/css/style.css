@@ -58,7 +58,7 @@ nav {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 5px;
-    background-color: rgba(90, 26, 0, 0.5);
+    background: linear-gradient(to bottom, var(--color1),rgba(142, 40, 0, 0.050) ) 
 }
 
 nav.scrolled {

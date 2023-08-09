@@ -50,6 +50,17 @@ header {
     background: radial-gradient(var(--color3),var(--color2),var(--color1)) no-repeat;
 }
 
+.country--flag {
+    display: flex;
+    margin-top: -8px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.3));
+    transition: all .5s;
+}
+
+.country--flag:hover {
+    transform: scale(1.10);
+}
+
 nav {
     display: flex;
     position: fixed;

@@ -26,6 +26,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+#body2 {
+    display: none;
+}
+
 /* Header */
 
 #inicioEsquerdo {
@@ -52,13 +56,25 @@ header {
 
 .country--flag {
     display: flex;
-    margin-top: -8px;
+    margin-right: 10px;
     filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.3));
     transition: all .5s;
 }
 
 .country--flag:hover {
     transform: scale(1.10);
+}
+
+#br {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -284,7 +300,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 102%;
+    height: 100vh;
     background:radial-gradient(var(--color2),var(--color1) 75%);
 }
 

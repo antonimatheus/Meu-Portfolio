@@ -47,7 +47,7 @@
         background-color: rgba(182, 74, 38, 0.6);
     }
 
-    #projects {
+    #projects,#projects2 {
         font-size: 7vw;
         text-align: center;
     }
@@ -194,7 +194,7 @@
         text-align: center;
     }
 
-    #projects {
+    #projects,#projects2 {
         font-size: 4.5vw;
         text-align: center;
     }

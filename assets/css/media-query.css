@@ -27,6 +27,10 @@
         text-align: justify;
     }
 
+    #title i {
+        width: 5vw;
+    }
+
     #apresentacion {
         text-align: center;
     }

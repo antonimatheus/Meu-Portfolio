@@ -137,14 +137,6 @@ li a:hover {
     transform: translateY(-5px);
 }
 
-/*Excluir?????*/#navegacion {
-    display: flex;
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--color4);
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-}
-
 #inicioEsquerdo p {
     display: flex;
     margin: 0px 20px;

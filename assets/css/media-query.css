@@ -51,6 +51,19 @@
         background-color: rgba(182, 74, 38, 0.6);
     }
 
+    .deskMobi{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .inputChange {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #projects,#projects2 {
         font-size: 7vw;
         text-align: center;

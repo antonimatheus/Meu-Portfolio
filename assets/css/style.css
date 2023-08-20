@@ -211,7 +211,7 @@ main h1 {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-#imgBlock1 img ,#imgBlock2 img, #imgBlock4 img {
+#imgBlock1 img ,#imgBlock2 img,#imgBlock3 img, #imgBlock4 img,#imgBlock12 img ,#imgBlock22 img,#imgBlock32 img, #imgBlock42 img  {
     animation: filter .5s ease; /* Add a smooth transition effect */
 }
 
@@ -241,7 +241,7 @@ main h1 {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
     color: var(--color4);
     background-color: var(--color2);
-    transition: .3s;
+    transition: .5s;
 }
 
 .inputChange:hover {
@@ -279,7 +279,7 @@ main h1 {
 }
 
 .imgs img:hover{
-    transform: scale(1.010) ;
+    transform: scale(1.010);
     background-color: rgba(245, 102, 54, 0.507);
 }
 

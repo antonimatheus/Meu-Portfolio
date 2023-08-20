@@ -42,19 +42,19 @@ const desk42 = document.getElementById("desk42");
 //const mob4 = document.getElementById("mob4");
 
 desk1.addEventListener("click", function() {
-  imgBlock1.innerHTML = '<img src="../assets/images/sunnyside-desktop.png" alt="Desktop Image" />';
+  imgBlock1.innerHTML = '<img src="assets/images/sunnyside-desktop.png" alt="Desktop Image" />';
 })  
 
 mob1.addEventListener("click", function() {
-  imgBlock1.innerHTML = '<img src="../assets/images/sunnyside-mobile.png" alt="Mobile Image" />';
+  imgBlock1.innerHTML = '<img src="assets/images/sunnyside-mobile.png" alt="Mobile Image" />';
 });
 
 desk2.addEventListener("click", function() {
-  imgBlock2.innerHTML = '<img src="../assets/images/android-desktop.png" alt="Desktop Image" />';
+  imgBlock2.innerHTML = '<img src="assets/images/android-desktop.png" alt="Desktop Image" />';
 });
 
 mob2.addEventListener("click", function() {
-  imgBlock2.innerHTML = '<img src="../assets/images/android-mobile.png" alt="Mobile Image" />';
+  imgBlock2.innerHTML = '<img src="assets/images/android-mobile.png" alt="Mobile Image" />';
 });
 
 desk3.addEventListener("click", function() {
@@ -77,19 +77,19 @@ desk4.addEventListener("click", function() {
 
 
 desk12.addEventListener("click", function() {
-  imgBlock12.innerHTML = '<img src="../assets/images/sunnyside-desktop.png" alt="Desktop Image" />';
+  imgBlock12.innerHTML = '<img src="assets/images/sunnyside-desktop.png" alt="Desktop Image" />';
 })  
 
 mob12.addEventListener("click", function() {
-  imgBlock12.innerHTML = '<img src="../assets/images/sunnyside-mobile.png" alt="Mobile Image" />';
+  imgBlock12.innerHTML = '<img src="assets/images/sunnyside-mobile.png" alt="Mobile Image" />';
 });
 
 desk22.addEventListener("click", function() {
-  imgBlock22.innerHTML = '<img src="../assets/images/android-desktop.png" alt="Desktop Image" />';
+  imgBlock22.innerHTML = '<img src="assets/images/android-desktop.png" alt="Desktop Image" />';
 });
 
 mob22.addEventListener("click", function() {
-  imgBlock22.innerHTML = '<img src="../assets/images/android-mobile.png" alt="Mobile Image" />';
+  imgBlock22.innerHTML = '<img src="assets/images/android-mobile.png" alt="Mobile Image" />';
   
 });
 

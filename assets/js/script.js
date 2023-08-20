@@ -3,6 +3,17 @@ const b2 = document.getElementById("body2")
 const br = document.getElementById("br")
 const us = document.getElementById("us")
 
+br.addEventListener("click", function() {
+  b1.style.display = 'none'
+  b2.style.display = 'block'
+})
+
+us.addEventListener("click", function() {
+  b1.style.display = 'block'
+  b2.style.display = 'none'
+})
+
+
 const imgBlock1 = document.getElementById("imgBlock1");
 const imgBlock2 = document.getElementById("imgBlock2");
 const imgBlock3 = document.getElementById("imgBlock3");
@@ -20,6 +31,7 @@ const desk3 = document.getElementById("desk3");
 const mob3 = document.getElementById("mob3");
 const desk4 = document.getElementById("desk4");
 //const mob4 = document.getElementById("mob4");
+
 const desk12 = document.getElementById("desk12");
 const mob12 = document.getElementById("mob12");
 const desk22 = document.getElementById("desk22");
@@ -43,7 +55,6 @@ desk2.addEventListener("click", function() {
 
 mob2.addEventListener("click", function() {
   imgBlock2.innerHTML = '<img src="../assets/images/android-mobile.png" alt="Mobile Image" />';
-  
 });
 
 desk3.addEventListener("click", function() {
@@ -62,6 +73,9 @@ desk4.addEventListener("click", function() {
 //mob4.addEventListener("click", function() {
 //  imgBlock4.innerHTML = '<img src="" alt="Mobile Image" />';
 //});
+
+
+
 desk12.addEventListener("click", function() {
   imgBlock12.innerHTML = '<img src="../assets/images/sunnyside-desktop.png" alt="Desktop Image" />';
 })  
@@ -95,16 +109,6 @@ desk42.addEventListener("click", function() {
 //mob42.addEventListener("click", function() {
 //  imgBlock42.innerHTML = '<img src="" alt="Mobile Image" />';
 //});
-
-br.addEventListener("click", function() {
-  b1.style.display = 'none'
-  b2.style.display = 'block'
-})
-
-us.addEventListener("click", function() {
-  b1.style.display = 'block'
-  b2.style.display = 'none'
-})
 
 
 const observer = new IntersectionObserver((entries) => {

@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (max-width:800px) {
+
+    .hidden {
+        transition: none;
+    }
+
     #inicioEsquerdo {
         display: flex;
         width: 100vw;
@@ -28,7 +33,7 @@
     }
 
     #title i {
-        width: 5vw;
+        width: 4vw;
     }
 
     #apresentacion {
@@ -75,10 +80,6 @@
 
     main p {
         text-align: center;
-    }
-
-    #imgs-container {
-        /*background-color: red;*/
     }
 
     .img-block {
@@ -153,6 +154,7 @@
 }
 
 @media screen and (min-width: 800px) and (max-width:1280px) {
+
     header {
         flex-direction: column;
     }

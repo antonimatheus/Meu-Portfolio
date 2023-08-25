@@ -207,11 +207,11 @@ main h1 {
     font-size: 30px;
     color: var(--color5);
     border-radius: 20px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-#imgBlock1 img ,#imgBlock2 img,#imgBlock3 img, #imgBlock4 img,#imgBlock12 img ,#imgBlock22 img,#imgBlock32 img, #imgBlock42 img  {
+#imgBlock1 img ,#imgBlock2 img,#imgBlock3 img, #imgBlock4 img,#imgBlock12 img ,#imgBlock22 img,#imgBlock32 img, #imgBlock42 img {
     animation: filter .5s ease; /* Add a smooth transition effect */
 }
 

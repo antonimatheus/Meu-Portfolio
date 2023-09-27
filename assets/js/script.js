@@ -72,15 +72,3 @@ const observer = new IntersectionObserver((entries) => {
 })
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))
-
-
-const desiredElement = document.getElementById('navbar'); // elemento alvo
-const pixelsAmount = 50; // Quantidade de pixels a contar do TOP até definir a cor
-
-window.addEventListener('scroll', function() {
-    if (window.scrollY > pixelsAmount) {
-        desiredElement.style.backgroundColor = 'black';
-    } else {
-        desiredElement.style.backgroundColor = 'transparent';
-    }
-});

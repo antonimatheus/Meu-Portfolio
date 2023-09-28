@@ -9,6 +9,7 @@ const interactive2 = document.getElementById("interactive2");
 
 const login1= document.getElementById("login1");
 
+
 const desk1 = document.getElementById("desk1");
 const mob1 = document.getElementById("mob1");
 
@@ -70,5 +71,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 })
+
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))

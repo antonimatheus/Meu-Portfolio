@@ -8,6 +8,7 @@ const interactive1 = document.getElementById("interactive1");
 const interactive2 = document.getElementById("interactive2");
 
 const login1= document.getElementById("login1");
+const login2= document.getElementById("login2");
 
 
 const desk1 = document.getElementById("desk1");
@@ -20,7 +21,7 @@ const desk3 = document.getElementById("desk3");
 const mob3 = document.getElementById("mob3");
 
 const desk4 = document.getElementById("desk4");
-//const mob4 = document.getElementById("mob4");
+const mob4 = document.getElementById("mob4")
 
 desk1.addEventListener("click", function() {
   sunny1.style.display = 'flex'
@@ -43,23 +44,25 @@ mob2.addEventListener("click", function() {
 });
 
 desk3.addEventListener("click", function() {
+  login1.style.display = 'flex'
+  login2.style.display = 'none'
+});
+
+mob3.addEventListener("click", function() {
+  login1.style.display = 'none'
+  login2.style.display = 'flex'
+});
+
+desk4.addEventListener("click", function() {
   interactive1.style.display = 'flex' 
   interactive2.style.display = 'none' 
 });
 
-mob3.addEventListener("click", function() {
+mob4.addEventListener("click", function() {
   interactive1.style.display = 'none' 
   interactive2.style.display = 'flex' 
   
 });
-
-desk4.addEventListener("click", function() {
-  login1.style.display = 'flex'
-});
-
-//mob4.addEventListener("click", function() {
-//  imgBlock4.innerHTML = '<img src="" alt="Mobile Image" />';
-//});
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

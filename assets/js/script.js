@@ -61,7 +61,6 @@ desk4.addEventListener("click", function() {
 mob4.addEventListener("click", function() {
   interactive1.style.display = 'none' 
   interactive2.style.display = 'flex' 
-  
 });
 
 const observer = new IntersectionObserver((entries) => {

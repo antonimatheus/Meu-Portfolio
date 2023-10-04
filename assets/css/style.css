@@ -16,14 +16,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-html, body {
+body {
     font-family: var(--font1);
     width: 100vw;
     height: 100vh;
+    position: relative; 
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -64,16 +65,15 @@ header {
 
 #navbar {
     display: flex;
-    position: sticky;
-    z-index: 1;
-    position: fixed;
-    width: 98.7%;
     flex-direction: row-reverse;
     justify-content: space-between;
+    width: 100%;
     padding: 5px;
-    background-color: var(--color1);
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    transition: .4s;
 }
-
 
 #navbar a {
     padding: 10px;
@@ -104,7 +104,6 @@ li a {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    
 }
 
 #web i {
@@ -144,6 +143,44 @@ li a {
     text-indent: 20px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     color: var(--color4);
+}
+
+#Up {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgba(70, 137, 102, 0.5);
+    z-index: 1;
+    transition: .5s;
+}
+
+#Up:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#Up i {
+    font-size: 30px;
+    color: var(--color3);
+}
+
+#Up i:hover {
+    animation: Up .5s ease-in infinite alternate;
+}
+
+@keyframes Up {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
 }
 
 main {

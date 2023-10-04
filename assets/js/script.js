@@ -76,3 +76,28 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el))
+
+
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+  const scrollY = window.scrollY;
+  if (scrollY > 0) {
+    navbar.style.backgroundColor = '#8E2800';
+  } else {
+    navbar.style.backgroundColor = ''; 
+  }
+});
+
+
+const Up = document.getElementById('Up');
+
+window.addEventListener('scroll', function() {
+  const scrollY = window.scrollY;
+  if (scrollY > 50) {
+    Up.style.display = 'flex';
+  } else {
+    Up.style.display = 'none'; 
+  }
+});
+

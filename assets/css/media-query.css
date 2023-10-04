@@ -73,6 +73,11 @@
         text-align: center;
     }
 
+    #Up {
+        top: 90%;
+        left: 85%;
+    }
+
     main h2 {
         text-align: center;
     }
@@ -90,7 +95,7 @@
     }
 
     .imgs img {
-        max-width: 460px;
+        max-width: 90%;
     }
 
     #iframe-container {
@@ -203,6 +208,11 @@
         background-color: rgba(182, 74, 38, 0.6);
     }
 
+    #Up {
+        top: 80%;
+        left: 85%;
+    }
+
     main h2 {
         text-align: center;
     }
@@ -225,7 +235,7 @@
     }
 
     .imgs img {
-        max-width: 460px;
+        max-width: 90%;
     }
 
     #iframe-container {
@@ -280,4 +290,5 @@
     #img-contact img {
         display: none;
     }
+
 }

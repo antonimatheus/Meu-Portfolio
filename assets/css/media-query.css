@@ -57,10 +57,8 @@
     }
 
     #finish-text {
-        background: url(../images/Telecommuting-pana.svg) no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-color: rgba(182, 74, 38, 0.6);
+        background: none;
+        background: radial-gradient(ellipse, var(--color4) , var(--color3));
     }
 
     .deskMobi{
@@ -126,7 +124,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        background: url(../images/Developer\ activity-pana.svg);
+        background: none;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -161,6 +159,10 @@
 
     #img-contact img {
         display: none;
+    }
+
+    #Copyright {
+        text-align: center;
     }
 }
 

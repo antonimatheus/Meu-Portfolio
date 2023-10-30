@@ -113,7 +113,6 @@ li a {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-
     background-color: var(--color3);
     transition: width 0.4s ease-in-out;
 }
@@ -132,22 +131,20 @@ li a {
     color: var(--color3);
     font-size: 45px;
     margin: 0px 10px ;
-    transition: all .3s ease-in-out;
-    animation: 1s toUpAnimation infinite alternate; 
 }
 
 #web i:hover {
     color: var(--color4);
-    transform: translateY(-5px);
+    animation: .5s toUpAnimation infinite alternate-reverse; 
 }
 
 @keyframes toUpAnimation {
     to {
-        transform: translateY(5px);
+        transform: translateY(0px);
     }
 
     from {
-        transform: translateY(0px);
+        transform: translateY(-5px);
     }
 }
 
@@ -232,11 +229,11 @@ main h1 {
 
 #f-text {
     display: flex;
-
     flex-direction: column;
     margin-top: -50px;
     width: 100vw;
 }
+
 #finish-text {
     display: flex;
     justify-content: center;

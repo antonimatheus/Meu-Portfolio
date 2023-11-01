@@ -123,11 +123,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
         background: none;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        gap: 35px;
     }
 
     #contacth2 {
@@ -163,6 +163,7 @@
 
     #Copyright {
         text-align: center;
+        font-size: 13px;
     }
 }
 
@@ -209,16 +210,8 @@
         font-size: 30px;
     }
 
-    #finish-text {
-        background: url(../images/Telecommuting-pana.svg) no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-color: rgba(182, 74, 38, 0.6);
-    }
-
     #Up {
-        top: 80%;
+        top: 90%;
         left: 85%;
     }
 
@@ -266,11 +259,12 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        background: url(../images/Developer\ activity-pana.svg);
+        background: url(../images/new-message-animate.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
+        box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .5);
     }
 
     #contact h2 {

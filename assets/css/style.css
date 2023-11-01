@@ -72,7 +72,7 @@ header {
     position: fixed;
     background-color: transparent;
     z-index: 1;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 #navbar a {
@@ -191,12 +191,13 @@ li a {
 }
 
 #Up:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 #Up i {
     font-size: 30px;
     color: var(--color3);
+    animation: Up 1s ease-in infinite alternate;
 }
 
 #Up i:hover {
@@ -211,6 +212,29 @@ li a {
     to {
         transform: translateY(-5px);
     }
+}
+
+@keyframes Down {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+#arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 100%;
+    font-size: 40px;
+    color: var(--color5);
+    animation: Down .6s ease-in infinite alternate;
 }
 
 main {
@@ -241,13 +265,13 @@ main h1 {
     width: 100%;
     height: 550px;
     margin: 50px 0px;
-    background: url(../images/code-typing-animate.svg);
+    background: url(../images/webinar-animate.svg), radial-gradient(ellipse,var(--color4), var(--color3));
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    box-shadow: inset 5px 0px 13px rgba(0, 0, 0, .5);
-    background-color: rgba(182, 74, 38, 0.6);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .5);
+    
 }
 
 #f-text p {
@@ -258,8 +282,8 @@ main h1 {
     height: 100%;
     text-align: center;
     font-size: 30px;
-    color: var(--color5);
-    backdrop-filter: blur(1.5px);
+    color: var(--color1);
+    backdrop-filter: blur(3px);
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -442,7 +466,7 @@ footer {
     width: 50vw;
     height: 100%;
     padding: 20px;
-    gap: 20px;
+    gap: 25px;
 }
 
 #img-contact {
@@ -500,13 +524,13 @@ footer a:hover {
     width: 100%;
     height: 100%;
     font-weight: 500;
-    color: var(--color4);
-    background-color: var(--color2);
+    color: var(--color2);
+    background-color: var(--color3);
 }
 
 #img-contact {
     display: flex;
-    background: url(../images/sent-message-animate.svg);
+    background: url(../images/new-message-animate.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;

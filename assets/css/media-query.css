@@ -57,8 +57,7 @@
     }
 
     #finish-text {
-        background: none;
-        background: radial-gradient(ellipse, var(--color4) , var(--color3));
+        width: 100%;
     }
 
     .deskMobi{
@@ -77,11 +76,6 @@
     #projects {
         font-size: 7vw;
         text-align: center;
-    }
-
-    #Up {
-        top: 90%;
-        left: 85%;
     }
 
     main h2 {
@@ -123,7 +117,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: none;
+        background: url(../images/new-message-animate.svg), 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -210,11 +206,6 @@
         font-size: 30px;
     }
 
-    #Up {
-        top: 90%;
-        left: 85%;
-    }
-
     main h2 {
         text-align: center;
     }
@@ -259,7 +250,8 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        background: url(../images/new-message-animate.svg);
+        background: url(../images/new-message-animate.svg), 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7));
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -293,5 +285,4 @@
     #img-contact img {
         display: none;
     }
-
 }

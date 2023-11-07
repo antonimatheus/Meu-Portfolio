@@ -131,21 +131,12 @@ li a {
     color: var(--color3);
     font-size: 45px;
     margin: 0px 10px ;
+    transition: .5s;
 }
 
 #web i:hover {
     color: var(--color4);
-    animation: .5s toUpAnimation infinite alternate-reverse; 
-}
-
-@keyframes toUpAnimation {
-    to {
-        transform: translateY(0px);
-    }
-
-    from {
-        transform: translateY(-5px);
-    }
+    transform: translateY(-5px);
 }
 
 #inicioEsquerdo p {
@@ -175,45 +166,6 @@ li a {
     color: var(--color4);
 }
 
-#Up {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 90%;
-    left: 95%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color:rgba(70, 137, 102, 0.5);
-    z-index: 1;
-    transition: .5s;
-}
-
-#Up:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-#Up i {
-    font-size: 30px;
-    color: var(--color3);
-    animation: Up 1s ease-in infinite alternate;
-}
-
-#Up i:hover {
-    animation: Up .5s ease-in infinite alternate;
-}
-
-@keyframes Up {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(-5px);
-    }
-}
-
 @keyframes Down {
     from {
         transform: translateY(0px);
@@ -229,7 +181,7 @@ li a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 0%;
     width: 100%;
     font-size: 40px;
@@ -270,8 +222,7 @@ main h1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, .5);
-    
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, .7);
 }
 
 #f-text p {
@@ -456,7 +407,8 @@ footer {
     flex-direction: row;
     width: 100vw;
     height: 100vh;
-    background:radial-gradient(var(--color2),var(--color1) 75%);
+    background: radial-gradient(var(--color2),var(--color1) 75%);
+
 }
 
 #contact {
@@ -496,6 +448,16 @@ footer a:hover {
     color: var(--color4);
 }
 
+@keyframes toUpAnimation {
+    to {
+        transform: translateY(0px);
+    }
+
+    from {
+        transform: translateY(-5px);
+    }
+}
+
 #contactInput {
     width: 160px;
     height: 45px;
@@ -525,7 +487,7 @@ footer a:hover {
     height: 100%;
     font-weight: 500;
     color: var(--color2);
-    background-color: var(--color3);
+    background-color: #802502;
 }
 
 #img-contact {

@@ -1,4 +1,4 @@
-class FormSubmit {
+/*class FormSubmit {
     constructor(settings) {
       this.settings = settings;
       this.form = document.querySelector(settings.form);
@@ -62,4 +62,4 @@ class FormSubmit {
     success: "<h1 class='success'>Mensagem enviada!</h1>",
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
   });
-  formSubmit.init();
+  formSubmit.init();*/

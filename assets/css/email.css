@@ -1,0 +1,107 @@
+:root {
+    --font1 :'Ubuntu', sans-serif;
+
+    --color1: #8E2800;
+    --color2: #B64926;
+    --color3: #FFB03B;
+    --color4: #FFF0A5;
+    --color5: #468966;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background: radial-gradient(circle, var(--color3),var(--color2),var(--color1));
+    font-family: var(--font1);
+}
+
+form {
+    width: 100%;
+    max-width: 30rem;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    color: var(--color1);
+    background: var(--color4);
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: var(--color2);
+    box-shadow: 0px 0px 10px var(--color2);
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: var(--color4);
+}
+
+textarea {
+    min-height: 12.5rem;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    border-radius: 99px;
+    color: white;
+    background: var(--color5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #5cb386;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #315e46;
+}
+
+.success,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

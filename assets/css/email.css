@@ -46,16 +46,17 @@ button {
     font: inherit;
     padding: 1.25rem;
     font-weight: 700;
+    color: white;
 }
 
 input,
 textarea {
     margin-bottom: 1rem;
     color: var(--color1);
-    background: rgba(255, 240, 166, 0.8);
+    background: rgba(255, 240, 166, 0.75);
     border: 0.125rem solid transparent;
     border-radius: 1.125rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -71,6 +72,7 @@ textarea:focus {
 label {
     margin-bottom: 0.5rem;
     color: var(--color4);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 textarea {
@@ -79,12 +81,7 @@ textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: rgba(143, 40, 0, 0.7);
-}
-
-a {
-    text-decoration: none;
-    color: white;
+    color: rgba(143, 40, 0, 0.4);
 }
 
 button {

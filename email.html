@@ -7,7 +7,6 @@
 <title>Contact me</title>
 <link rel="shortcut icon" href="assets/images/antonimatheus.png" type="image/x-icon">
 <link rel="stylesheet" href="./assets/css/email.css" />
-<script defer src="./assets/js/email.js"></script>
 </head>
 <body>
 <form
@@ -20,8 +19,9 @@
     <label for="email">E-mail</label>
     <input type="email" name="email" id="email" placeholder="abc@example.com" required />
     <label for="mesage">Mesage</label>
-    <textarea name="mesage" id="mesage" placeholder="I have project idea..." required></textarea>
+    <textarea name="mesage" id="mesage" placeholder="I have a project idea..." required ></textarea>
     <button type="submit">Send Email</button>
+    <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
 </form>
 </body>
 </html>

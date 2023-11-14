@@ -234,7 +234,7 @@ main h1 {
     text-align: center;
     font-size: 30px;
     color: var(--color1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 

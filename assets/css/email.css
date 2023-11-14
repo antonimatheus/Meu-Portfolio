@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --font1 :'Ubuntu', sans-serif;
 
@@ -23,7 +25,7 @@ body {
     /* background: radial-gradient(circle, var(--color1),var(--color2));*/
     background: url(../images/email-campaign-animate.svg), radial-gradient(circle, var(--color4),var(--color2));
     background-size: cover;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     background-position: center;
     background-repeat: no-repeat;
     font-family: var(--font1);
@@ -32,7 +34,6 @@ body {
 form {
     width: 100%;
     max-width: 30rem;
-
 }
 
 label,
@@ -74,7 +75,8 @@ textarea:focus {
 
 label {
     margin-bottom: 0.5rem;
-    color: var(--color4);
+    color: var(--color5);
+    font-weight: 700;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -101,20 +103,52 @@ button:focus {
     background: #5cb386;
 }
 
-button:disabled {
-    cursor: not-allowed;
-    background: #315e46;
+
+/*----- THANKS -----*/
+
+#Thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
 }
 
-.success,
-.error {
+#messageThanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#messageThanks h1 {
+    font-weight: 800;
+    line-height: 40px;
     text-align: center;
+    color: black;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    
 }
 
-.success {
-    color: green;
+#backToPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: var(--color5);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.error {
-    color: red;
+#backToPortfolio a {
+    color: white;
+    text-decoration: none;
+}
+
+#backToPortfolio:hover {
+    background-color: #5cb386;
 }

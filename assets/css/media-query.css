@@ -58,7 +58,8 @@
 
     #finish-text {
         width: 100%;
-        background-attachment: none;
+        background-size: 90%;
+        background-attachment: scroll;
     }
 
     .deskMobi{

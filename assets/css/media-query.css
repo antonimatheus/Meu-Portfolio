@@ -2,6 +2,7 @@
 
 @media screen and (max-width:800px) {
 
+    /*
     .hidden {
         transition: none;
     }
@@ -13,6 +14,7 @@
     #navbar li a::after {
         display: none;
     }
+    */
 
     #inicioEsquerdo {
         display: flex;

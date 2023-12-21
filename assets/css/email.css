@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    animation: 1s fog;
 }
 
 @keyframes fog {
@@ -33,15 +32,13 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    place-items: center;
-    padding: 1rem;
-    /* background: radial-gradient(circle, var(--color1),var(--color2));*/
     background: url(../images/email-campaign-animate.svg), radial-gradient(circle, var(--color4),var(--color2));
     background-size: cover;
     backdrop-filter: blur(8px);
     background-position: center;
     background-repeat: no-repeat;
     font-family: var(--font1);
+    animation: 1s fog ease-in;
 }
 
 form {
@@ -121,11 +118,6 @@ button:focus {
 #Thanks {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    gap: 50px;
 }
 
 #messageThanks {
@@ -133,6 +125,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     width: 80%;
+    margin: 20px;
 }
 
 #messageThanks h1 {

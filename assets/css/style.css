@@ -10,6 +10,14 @@
     --color3: #FFB03B;
     --color4: #FFF0A5;
     --color5: #468966;
+
+   /* 
+    --color1:#000000;
+    --color2:#271E14;
+    --color3:#B68F63;
+    --color4:#BCAA8F;
+    --color5:#F6DFBC;
+    */
 }
 
 * {
@@ -230,6 +238,19 @@ main h1 {
     margin: 0 auto;
     width: 33vw;
 }
+
+/*
+#imgwebsite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 33vw;
+    border-radius: 5%;
+    filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.5));
+}
+*/
+
 
 .inputChange {
     width: 100px;

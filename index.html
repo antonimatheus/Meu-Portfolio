@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/images/photgProAntoniWithoutBack.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-query.css">
+    <link rel="stylesheet" href="./assets/css/email.css" />
     
     <link
     rel="stylesheet"
@@ -23,7 +24,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contactInput">Contato</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
             </nav>
@@ -165,9 +166,24 @@
                 <h2 class="hidden">Contato</h2>
                 <h1 class="hidden">Tem um projeto ou problema para resolver?</h1>
                 <p class="hidden">Venha e me conte-me suas ideias para desenvolver a aplicação dos seus sonhos!</p>
-                <a href="email.html"><input type="button" value="Diga, Olá!" id="contactInput"></a>
-                <div id="background-footer">
+
+                <form 
+                    action="https://formsubmit.co/antonimatheus789@gmail.com"
+                    method="POST" 
+                    autocomplete="off"
+                    id="form"
+                >
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Gallagher" required />
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="abc@example.com" required />
+                    <label for="mesage">Mesage</label>
+                    <textarea name="mesage" id="mesage" placeholder="I have a project idea..." required ></textarea>
+                    <button type="submit" id="submit">Send Email</button>
+                    <input type="hidden" name="_next" value="https://antonisportfolio.netlify.app/thanks">
+                </form>
                 
+                <div id="background-footer">
                 </div>
             </div>
 
@@ -175,7 +191,18 @@
             </div>
         </footer>
         <div id="Copyright">
-            <p>Copyright © 2023 by Antoni Matheus. All rights reserved.</p>
+            <div id="CopyrightTitle">
+                <h1>Interessado em mim ?</h1>
+                <p>Siga minhas redes sociais</p>
+            </div>
+            <div id="CopyrightMedia">
+                <div><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+                <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+            <div id="CopyrightRights">
+                <p>Copyright © 2023 by Antoni Matheus.</p>
+                <p>All rights reserved.</p>
+            </div>
         </div>
     </div>
     <script src="assets/js/script.js"></script>

@@ -10,11 +10,6 @@
     --color5: #468966;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 @keyframes fog {
     from {
@@ -26,45 +21,35 @@
     }
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: url(../images/email-campaign-animate.svg), radial-gradient(circle, var(--color4),var(--color2));
-    background-size: cover;
-    backdrop-filter: blur(8px);
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: var(--font1);
-    animation: 1s fog ease-in;
-}
 
-form {
+#form {
     width: 100%;
     max-width: 30rem;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    background-color: var(--color4);
 }
 
-label,
-input,
-textarea,
-button {
+#form label,
+#form input,
+#form textarea,
+#form button {
     display: block;
 }
 
-input,
-textarea,
-button {
+#form input,
+#form textarea,
+#form button {
     width: 100%;
     font: inherit;
-    padding: 1.25rem;
+    padding: 1rem;
     font-weight: 700;
     color: white;
 }
 
-input,
-textarea {
+#form input,
+#form textarea {
     margin-bottom: 1rem;
     color: var(--color1);
     background: rgba(255, 240, 166, 0.75);
@@ -74,32 +59,32 @@ textarea {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
+#form input:hover,
+#form input:focus,
+#form textarea:hover,
+#form textarea:focus {
     outline: none;
     border-color: var(--color2);
     box-shadow: 0px 0px 10px var(--color2);
 }
 
-label {
+#form label {
     margin-bottom: 0.5rem;
     color: var(--color5);
     font-weight: 700;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
-textarea {
+#form textarea {
     min-height: 12.5rem;
     resize: vertical;
 }
 
-input::placeholder, textarea::placeholder {
+#form input::placeholder, #form textarea::placeholder {
     color: rgba(143, 40, 0, 0.4);
 }
 
-button {
+#form button {
     border: none;
     border-radius: 99px;
     background: var(--color5);
@@ -107,8 +92,8 @@ button {
     transition: 0.3s;
 }
 
-button:hover,
-button:focus {
+#form button:hover,
+#form button:focus {
     outline: none;
     background: #5cb386;
 }

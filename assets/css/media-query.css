@@ -113,7 +113,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        gap: 6%; 
+        gap: 20px; 
     }
 
     #contacth2 {
@@ -231,7 +231,7 @@
         width: 400px;
         height: 800px;
     }
-
+    
     #contact {
         display: flex;
         width: 100vw;

@@ -6,7 +6,7 @@
     --color1: #8E2800;
     --color2: #B64926;
     --color3: #FFB03B;
-    --color4: #FFF0A5;
+    --color4:   #fff;
     --color5: #468966;
 }
 
@@ -106,6 +106,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    animation: fog 1s ease-in;
 }
 
 #messageThanks {

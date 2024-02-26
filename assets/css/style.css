@@ -8,7 +8,7 @@
     --color1: #8E2800;
     --color2: #B64926;
     --color3: #FFB03B;
-    --color4: #FFF0A5;
+    --color4: #fff;
     --color5: #468966;
 
     /* 
@@ -550,7 +550,7 @@ footer a:hover {
     opacity: 0;
     filter: blur(3px);
     transform: translateY(5%);
-    transition: all .7s ease;
+    transition: all .7s ease-in;
 }
 
 .show {

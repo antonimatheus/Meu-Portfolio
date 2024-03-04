@@ -548,13 +548,11 @@ footer a:hover {
 
 .hidden {
     opacity: 0;
-    filter: blur(3px);
     transform: translateY(5%);
-    transition: all .7s ease-in;
+    transition: all .5s ease-in;
 }
 
 .show {
     opacity: 1;
-    filter: blur(0px);
     transform: translateY(0);
 }

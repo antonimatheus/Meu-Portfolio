@@ -39,13 +39,17 @@
         font-size: 20px;
     }
 
-    #finish-text p {
-        font-size: 30px;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    #f-text {
+        display: none;
     }
 
     #finish-text {
         width: 100%;
+    }
+
+    #finish-text p {
+        font-size: 30px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     }
 
     .deskMobi{

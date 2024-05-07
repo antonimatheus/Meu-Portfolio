@@ -39,6 +39,17 @@
         font-size: 20px;
     }
 
+    #designer h1 {
+        font-size: 7vw;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    #designImages img {
+        width: 250px;
+        height: 330px;
+    }
+    
     #f-text {
         display: none;
     }
@@ -185,6 +196,17 @@
     #title {
         font-size: 5.5vw;
         text-align: justify;
+    }
+
+    #designer h1 {
+        font-size: 4.5vw;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    #designImages img {
+        width: 300px;
+        height: 380px;
     }
 
     #apresentacion {

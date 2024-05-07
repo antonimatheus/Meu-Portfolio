@@ -199,6 +199,39 @@ main h1 {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
+#designer {
+    flex-direction: column;
+}
+
+#designImages {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 20px;
+
+}
+
+#designImages div {
+    flex-direction: row;
+    margin: 10px;
+}
+
+#designImages img {
+    display: flex;
+    width: 350px;
+    height: 430px;
+    border-radius: 15px;
+}
+
+#designer p {
+    color: blue;
+    transition: .4s;
+}
+
+#designer p:hover {
+    color: var(--color4);
+}
+
 #f-text  {
     display: flex;
     justify-content: center;
@@ -383,7 +416,6 @@ main h1 {
     align-items: center;
     overflow-x: auto;
     margin: 20px;
-    margin-bottom: 50px;
 }
 
 .iframes iframe{

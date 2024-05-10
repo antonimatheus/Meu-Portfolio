@@ -21,6 +21,16 @@
         justify-content: center;
         width: 100vw;
     }
+
+    
+    #navbar a {
+        font-size: 4vw;
+    }
+
+    li a {
+        margin: 0px 0px;
+        transition: color 0.4s ease-in-out;
+    }
     
     #title {
         font-size: 7.5vw;

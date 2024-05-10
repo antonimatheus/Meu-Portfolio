@@ -125,8 +125,8 @@ li a {
 
 #web i {
     color: var(--color3);
-    font-size: 45px;
-    margin: 0px 10px ;
+    font-size: 50px;
+    margin: 0px 15px ;
     transition: .5s;
 }
 
@@ -221,14 +221,15 @@ main h1 {
     width: 350px;
     height: 430px;
     border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
 }
 
-#designer p {
+#designer p a {
     color: blue;
     transition: .4s;
 }
 
-#designer p:hover {
+#designer p a:hover {
     color: var(--color4);
 }
 

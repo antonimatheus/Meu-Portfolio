@@ -99,15 +99,21 @@ window.addEventListener('scroll', function() {
 });
 
 
+
+
+
+
 let burger = document.getElementById("burger")
 let navDesktop = document.getElementById("navDesktop")
 
 function resize() {
-  var burger = document.getElementById('burger');
+  var burgerIconMenu = document.getElementById('burgerIcon');
   if (window.innerWidth >= 800) {
+    burgerIconMenu.style.display = 'none';
     burger.style.display = 'none';
     navDesktop.style.display = 'flex';
   } else {
+    burgerIconMenu.style.display = 'flex';
     burger.style.display = 'flex';
     navDesktop.style.display = 'none';
   }
@@ -118,7 +124,6 @@ window.onresize = resize;
 
 // Chamar a função resize para definir o estado inicial
 resize();
-
 
 let burgerIcon = document.getElementById("burgerIcon");
         let burgerList = document.getElementById("burgerList");
@@ -134,6 +139,4 @@ let burgerIcon = document.getElementById("burgerIcon");
                 openIcon.style.display = 'flex';
                 closeIcon.style.display = 'none';
             }
-        
 }
-

@@ -60,7 +60,9 @@ header {
 }
 
 
-#burger {
+
+
+#burgerIcon {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -68,13 +70,10 @@ header {
     position: relative;
 }
 
-#burger i {
+#burgerIcon i {
     display: flex;
+    font-size: 25px;
     color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
     z-index: 999;
     cursor: pointer;
 }
@@ -86,7 +85,7 @@ header {
     height: 100vh;
     top: 0;
     right: 0;
-    background-color: var(--color1);
+    background-color: rgba(142, 40, 0, 0.95);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
     position: fixed;
     transform: translateX(100%);
@@ -99,7 +98,7 @@ header {
 }
 
 #burgerList div {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #burgerList div li {
@@ -108,7 +107,7 @@ header {
 }
 
 #burgerList div li a{
-    font-size: 4.5vw;
+    font-size: 4vw;
 }
 
 

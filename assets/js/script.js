@@ -97,3 +97,43 @@ window.addEventListener('scroll', function() {
     Up.style.display = 'none'; 
   }
 });
+
+
+let burger = document.getElementById("burger")
+let navDesktop = document.getElementById("navDesktop")
+
+function resize() {
+  var burger = document.getElementById('burger');
+  if (window.innerWidth >= 800) {
+    burger.style.display = 'none';
+    navDesktop.style.display = 'flex';
+  } else {
+    burger.style.display = 'flex';
+    navDesktop.style.display = 'none';
+  }
+}
+
+// Adicionar ouvinte de evento para o redimensionamento da janela
+window.onresize = resize;
+
+// Chamar a função resize para definir o estado inicial
+resize();
+
+
+let burgerIcon = document.getElementById("burgerIcon");
+        let burgerList = document.getElementById("burgerList");
+        let openIcon = document.getElementById("openIcon");
+        let closeIcon = document.getElementById("closeIcon");
+
+        function burgerIconClick() {
+            burgerList.classList.toggle("show");
+            if (burgerList.classList.contains("show")) {
+                openIcon.style.display = 'none';
+                closeIcon.style.display = 'flex';
+            } else {
+                openIcon.style.display = 'flex';
+                closeIcon.style.display = 'none';
+            }
+        
+}
+

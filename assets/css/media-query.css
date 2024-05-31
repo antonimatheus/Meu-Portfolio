@@ -15,6 +15,54 @@
         display: none;
     }
 
+    #burgerIcon {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 95%;
+        position: relative;
+    }
+    
+    #burgerIcon i {
+        display: flex;
+        font-size: 25px;
+        color: white;
+        z-index: 999;
+        cursor: pointer;
+    }
+    
+    #burgerList {
+        display: none;
+        flex-direction: column;
+        width: 45vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: rgba(142, 40, 0, 0.95);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
+        position: fixed;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #burgerList.show {
+        display: flex;
+        transform: translateX(0);
+    }
+    
+    #burgerList div {
+        margin-top: 60px;
+    }
+    
+    #burgerList div li {
+        padding: 20px;
+        list-style-type: none;
+    }
+    
+    #burgerList div li a{
+        font-size: 4vw;
+    }
+
     #navbar {
         display: flex;
         flex-direction: row;

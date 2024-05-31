@@ -60,8 +60,17 @@ header {
 }
 
 
+#burger {
+    display: none;
+}
 
+#burgerIcon {
+    display: none;
+}
 
+#burgerList {
+    display: none;
+}
 
 
 

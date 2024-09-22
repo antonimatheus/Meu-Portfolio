@@ -1,142 +1,71 @@
-const sunny1 = document.getElementById("sunny1");
-const sunny2 = document.getElementById("sunny2");
+// Agrupando IDs relacionados
+const ids = {
+  sunny: ['sunny1', 'sunny2'],
+  android: ['android1', 'android2'],
+  login: ['login1', 'login2'],
+  interactive: ['interactive1', 'interactive2'],
+  desk: ['desk1', 'desk2', 'desk3', 'desk4'],
+  mob: ['mob1', 'mob2', 'mob3', 'mob4']
+};
 
-const android1 = document.getElementById("android1");
-const android2 = document.getElementById("android2");
+// Função para manipular display
+function toggleDisplay(desk, mob, section) {
+  document.getElementById(desk).addEventListener('click', () => {
+    document.getElementById(ids[section][0]).style.display = 'flex';
+    document.getElementById(ids[section][1]).style.display = 'none';
+  });
 
-const interactive1 = document.getElementById("interactive1");
-const interactive2 = document.getElementById("interactive2");
+  document.getElementById(mob).addEventListener('click', () => {
+    document.getElementById(ids[section][0]).style.display = 'none';
+    document.getElementById(ids[section][1]).style.display = 'flex';
+  });
+}
 
-const login1= document.getElementById("login1");
-const login2= document.getElementById("login2");
+// Aplicando a função
+toggleDisplay(ids.desk[0], ids.mob[0], 'sunny');
+toggleDisplay(ids.desk[1], ids.mob[1], 'android');
+toggleDisplay(ids.desk[2], ids.mob[2], 'login');
+toggleDisplay(ids.desk[3], ids.mob[3], 'interactive');
 
-const desk1 = document.getElementById("desk1");
-const mob1 = document.getElementById("mob1");
-
-const desk2 = document.getElementById("desk2");
-const mob2 = document.getElementById("mob2");
-
-const desk3 = document.getElementById("desk3");
-const mob3 = document.getElementById("mob3");
-
-const desk4 = document.getElementById("desk4");
-const mob4 = document.getElementById("mob4")
-
-desk1.addEventListener("click", function() {
-  sunny1.style.display = 'flex'
-  sunny2.style.display = 'none'
-})  
-
-mob1.addEventListener("click", function() {
-  sunny1.style.display = 'none'
-  sunny2.style.display = 'flex'
-});
-
-desk2.addEventListener("click", function() {
-  android1.style.display = 'flex'
-  android2.style.display = 'none'
-});
-
-mob2.addEventListener("click", function() {
-  android1.style.display = 'none'
-  android2.style.display = 'flex'
-});
-
-desk3.addEventListener("click", function() {
-  login1.style.display = 'flex'
-  login2.style.display = 'none'
-});
-
-mob3.addEventListener("click", function() {
-  login1.style.display = 'none'
-  login2.style.display = 'flex'
-});
-
-desk4.addEventListener("click", function() {
-  interactive1.style.display = 'flex' 
-  interactive2.style.display = 'none' 
-});
-
-mob4.addEventListener("click", function() {
-  interactive1.style.display = 'none' 
-  interactive2.style.display = 'flex' 
-});
-
+// Observador de interseção
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show')
-    } else {
-      entry.target.classList.remove('show')
-    }
-  })
-})
-
-const hiddenElements = document.querySelectorAll('.hidden')
-hiddenElements.forEach((el) => observer.observe(el))
-
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', function() {
-  const scrollY = window.scrollY;
-  if (scrollY > 0) {
-    navbar.style.backgroundColor = '#8E2800';
-  } else {
-    navbar.style.backgroundColor = ''; 
-  }
+    entry.target.classList.toggle('show', entry.isIntersecting);
+  });
 });
 
-const Up = document.getElementById('Up');
+document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
 
-window.addEventListener('scroll', function() {
+// Navbar e botão 'Up'
+window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  if (scrollY > 50) {
-    Up.style.display = 'flex';
-  } else {
-    Up.style.display = 'none'; 
-  }
+  document.getElementById('navbar').style.backgroundColor = scrollY > 0 ? '#8E2800' : '';
+  document.getElementById('Up').style.display = scrollY > 50 ? 'flex' : 'none';
 });
 
-
-
-
-
-
-let burger = document.getElementById("burger")
-let navDesktop = document.getElementById("navDesktop")
-
+// Redimensionamento da janela
 function resize() {
-  var burgerIconMenu = document.getElementById('burgerIcon');
-  if (window.innerWidth >= 800) {
-    burgerIconMenu.style.display = 'none';
-    burger.style.display = 'none';
-    navDesktop.style.display = 'flex';
-  } else {
-    burgerIconMenu.style.display = 'flex';
-    burger.style.display = 'flex';
-    navDesktop.style.display = 'none';
-  }
+  const burgerIconMenu = document.getElementById('burgerIcon');
+  const burger = document.getElementById('burger');
+  const navDesktop = document.getElementById('navDesktop');
+  const displayState = window.innerWidth >= 800 ? ['none', 'flex'] : ['flex', 'none'];
+  
+  burgerIconMenu.style.display = displayState[0];
+  burger.style.display = displayState[0];
+  navDesktop.style.display = displayState[1];
 }
 
-// Adicionar ouvinte de evento para o redimensionamento da janela
 window.onresize = resize;
-
-// Chamar a função resize para definir o estado inicial
 resize();
 
-let burgerIcon = document.getElementById("burgerIcon");
-        let burgerList = document.getElementById("burgerList");
-        let openIcon = document.getElementById("openIcon");
-        let closeIcon = document.getElementById("closeIcon");
+// Icone do Burger
+document.getElementById('burgerIcon').addEventListener('click', () => {
+  const burgerList = document.getElementById('burgerList');
+  const openIcon = document.getElementById('openIcon');
+  const closeIcon = document.getElementById('closeIcon');
 
-        function burgerIconClick() {
-            burgerList.classList.toggle("show");
-            if (burgerList.classList.contains("show")) {
-                openIcon.style.display = 'none';
-                closeIcon.style.display = 'flex';
-            } else {
-                openIcon.style.display = 'flex';
-                closeIcon.style.display = 'none';
-            }
-}
+  burgerList.classList.toggle('show');
+  const isShown = burgerList.classList.contains('show');
+  openIcon.style.display = isShown ? 'none' : 'flex';
+  closeIcon.style.display = isShown ? 'flex' : 'none';
+});

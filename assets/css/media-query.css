@@ -159,10 +159,6 @@
         max-width: 95%;
     }
 
-    #InteractiveFrames {
-        display: none;
-    }
-
     #iframe-container {
         /*background-color: red;*/
         margin: 0;

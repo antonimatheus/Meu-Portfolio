@@ -218,6 +218,40 @@ main h1 {
     flex-direction: column;
 }
 
+
+
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Estilo da imagem ampliada */
+.overlay img {
+    max-width: 65vw; /* Metade da largura da viewport */
+    max-height: 65vh; /* Metade da altura da viewport */
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
 #designImages {
     display: flex;
     flex-direction: row;
@@ -382,35 +416,35 @@ main h1 {
     gap: 10px;
 }
 
-#sunny1 {
+#project1Desk {
     display: flex;
 }
 
-#sunny2 {
+#project1Mobile {
     display: none;
 }
 
-#android1 {
+#project2Desk {
     display: flex;
 }
 
-#android2 {
+#project2Mobile {
     display: none;
 }
 
-#interactive1 {
+#project3Desk {
     display: flex;
 }
 
-#interactive2 {
+#project3Mobile {
     display: none;
 }
 
-#login1 {
+#project4Desk {
     display: flex;
 }
 
-#login2 {
+#project4Mobile {
     display: none;
 }
 

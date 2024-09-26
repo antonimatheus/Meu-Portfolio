@@ -1,9 +1,9 @@
 // Agrupando IDs relacionados
 const ids = {
-  sunny: ['sunny1', 'sunny2'],
-  android: ['android1', 'android2'],
-  login: ['login1', 'login2'],
-  interactive: ['interactive1', 'interactive2'],
+  sunny: ['project1Desk', 'project1Mobile'],
+  android: ['project2Desk', 'project2Mobile'],
+  login: ['project3Desk', 'project3Mobile'],
+  interactive: ['project4Desk', 'project4Mobile'],
   desk: ['desk1', 'desk2', 'desk3', 'desk4'],
   mob: ['mob1', 'mob2', 'mob3', 'mob4']
 };
@@ -68,4 +68,33 @@ document.getElementById('burgerIcon').addEventListener('click', () => {
   const isShown = burgerList.classList.contains('show');
   openIcon.style.display = isShown ? 'none' : 'flex';
   closeIcon.style.display = isShown ? 'flex' : 'none';
+});
+
+
+
+
+
+
+// Seleciona todas as imagens e a div de sobreposição
+const images = document.querySelectorAll('#designImages img');
+const overlay = document.getElementById('overlay');
+const overlayImg = overlay.querySelector('img');
+
+// Função para exibir a imagem em tela
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        overlayImg.src = image.src;  // Define a imagem clicada como fonte
+        overlay.style.display = 'flex';  // Exibe a sobreposição
+    });
+});
+
+// Fechar a imagem ao clicar fora dela ou apertar ESC
+overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        overlay.style.display = 'none';
+    }
 });

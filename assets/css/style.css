@@ -59,7 +59,6 @@ header {
     background: radial-gradient(var(--color3),var(--color2),var(--color1)) no-repeat;
 }
 
-
 #burger {
     display: none;
 }

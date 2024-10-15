@@ -517,6 +517,7 @@ footer {
     height: 70px;
     border-radius: 45px;
     background-color: var(--color5);
+    border: 1px solid rgb(125, 238, 125);
     box-shadow: 2px 2px 10px rgb(73, 131, 73);
     gap: 10px;
     transition: .4s;
@@ -527,7 +528,6 @@ footer {
 #whatsApp:hover {
     background-color: rgb(125, 238, 125);
 }
-
 
 #whatsApp p {
     font-weight: bold;

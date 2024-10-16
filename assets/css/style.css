@@ -195,7 +195,7 @@ li a {
     left: 0%;
     width: 100%;
     font-size: 40px;
-    color: var(--color5);
+    color: var(--color3);
     animation: Down .5s ease-in infinite alternate;
 }
 
@@ -268,7 +268,6 @@ main h1 {
     flex-direction: row;
     overflow-x: auto;
     margin: 20px;
-
 }
 
 #designImages div {
@@ -278,7 +277,7 @@ main h1 {
 
 #designImages img {
     display: flex;
-    width: 350px;
+    width: 355px;
     height: 430px;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);

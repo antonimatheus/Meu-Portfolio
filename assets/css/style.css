@@ -9,7 +9,16 @@
     --color2: #B64926;
     --color3: #FFB03B;
     --color4: #fff;
-    --color5: #468966;
+    --color5: #29503c;
+
+    --color1: #8D6A5B; /* Marrom terra - confiabilidade */
+    --color2: #3A6351; /* Verde musgo - frescor */
+    --color3: #E07A5F; /* Laranja rústico - energia */
+    --color4: #f8f1eb; /* Bege areia - leveza */
+    --color5: #264653; /* Azul profundo - equilíbrio */
+
+
+    
 
     /* 
     --color1:#000000;
@@ -492,7 +501,7 @@ main h1 {
 
 .iframes iframe{
     display: inline-block;
-    width: 27vw;
+    width: 29vw;
     height: 800px;
     margin: 10px;
     border-radius: 20px;

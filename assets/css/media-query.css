@@ -165,8 +165,8 @@
   }
 
   .iframes iframe {
-    width: 380px;
-    height: 800px;
+    width: 360px;
+    height: 680px;
   }
 
   #contact {
@@ -183,6 +183,10 @@
     background-position: center;
     background-size: cover;
     gap: 40px;
+  }
+
+  #whatsApp {
+    width: 80%;
   }
 
   #contacth2 {
@@ -324,6 +328,10 @@
     background-attachment: fixed;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
     gap: 40px;
+  }
+
+  #whatsApp {
+    width: 50%;
   }
 
   #contact h2 {

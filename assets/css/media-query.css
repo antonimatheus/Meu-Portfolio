@@ -1,11 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 800px) {
-
   header {
     background: linear-gradient(to top, var(--color2), var(--color3));
   }
-  
+
   #title {
     display: flex;
     flex-direction: column;

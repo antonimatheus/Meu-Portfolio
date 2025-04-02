@@ -1,6 +1,20 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 800px) {
+
+  header {
+    background: linear-gradient(to top, var(--color2), var(--color3));
+  }
+  
+  #title {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    color: var(--color4);
+  }
+
   #inicioEsquerdo {
     display: flex;
     width: 100vw;
@@ -10,8 +24,16 @@
     gap: 15px;
   }
 
+  #inicioEsquerdo p {
+    color: var(--color4);
+  }
+
   #inicioDireito {
     display: none;
+  }
+
+  #arrow-down {
+    color: var(--color5);
   }
 
   #burgerIcon {

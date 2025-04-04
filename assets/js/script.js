@@ -40,7 +40,7 @@ document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   document.getElementById("navbar").style.backgroundColor =
-    scrollY > 0 ? "#9c3d17" : "";
+    scrollY > 0 ? "#271F14" : "";
   document.getElementById("Up").style.display = scrollY > 50 ? "flex" : "none";
 });
 

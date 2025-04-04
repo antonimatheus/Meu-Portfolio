@@ -5,11 +5,11 @@
 :root {
   --font1: "Ubuntu", sans-serif;
 
-  --color1: #271f14; /* Vermelho terroso – menos intenso, mas ainda vibrante */
-  --color2: #57493f; /* Laranja queimado – mais quente e equilibrado */
-  --color3: #b59060; /* Dourado suave – mantém a energia sem ser tão chamativo */
-  --color4: #e7e5e2; /* Cinza quase branco – mais moderno que branco puro */
-  --color5: #ffffff; /* Verde profundo – mais sofisticado e menos saturado */
+  --color1: #5a2a1b; /* Vermelho terroso – mais quente e forte */
+  --color2: #b05e2e; /* Laranja queimado – mais saturado, vibrante */
+  --color3: #f2b455; /* Dourado vibrante – mais luz, mais destaque */
+  --color4: #faf7f3; /* Cinza quase branco – ainda neutro, mas mais luminoso */
+  --color5: #1f5c45; /* Verde profundo – mais vida e personalidade */
 
   /* 
     --color1:#000000;
@@ -41,12 +41,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50vw;
+  width: 100vw;
+  gap: 20px;
 }
 
 #inicioDireito {
-  display: flex;
+  display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 50vw;
 }
@@ -108,7 +110,7 @@ header::before {
   font-size: 20px;
   text-decoration: none;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-  color: var(--color5);
+  color: var(--color4);
   transition: all 0.4s ease-in-out;
 }
 
@@ -168,11 +170,13 @@ li a {
 
 #web i:hover {
   color: var(--color3);
+  text-shadow: none;
   transform: translateY(-5px);
 }
 
 #inicioEsquerdo p {
   display: flex;
+  justify-content: center;
   margin: 0px 20px;
   font-size: 23px;
   font-weight: 500;
@@ -183,6 +187,7 @@ li a {
 #title {
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin: 0px 20px;
   font-size: 3.5em;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
@@ -328,7 +333,7 @@ main h1 {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  color: var(--color2);
+  color: var(--color3);
   background-color: var(--color5);
   transition: 0.4s;
   cursor: pointer;

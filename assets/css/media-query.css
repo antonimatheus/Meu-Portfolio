@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 800px) {
   header {
-    background: linear-gradient(to top, var(--color4), var(--color2));
+    background: linear-gradient(to top, var(--color2), var(--color3));
   }
 
   #title {
@@ -125,6 +125,19 @@
   #designImages img {
     width: 250px;
     height: 330px;
+  }
+
+  #f-text {
+    display: none;
+  }
+
+  #finish-text {
+    width: 100%;
+  }
+
+  #finish-text p {
+    font-size: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   }
 
   .deskMobi {
@@ -273,6 +286,18 @@
   #designImages img {
     width: 300px;
     height: 380px;
+  }
+
+  #apresentacion {
+    text-align: center;
+  }
+
+  #apresentacion p {
+    font-size: 20px;
+  }
+
+  #finish-text p {
+    font-size: 30px;
   }
 
   main h2 {

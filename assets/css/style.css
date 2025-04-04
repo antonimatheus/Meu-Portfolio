@@ -74,7 +74,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-   background: radial-gradient(var(--color4), var(--color3));
+  background: radial-gradient(var(--color4), var(--color3));
   opacity: 0.95; /* Ajuste este valor para mais ou menos visibilidade da imagem */
   pointer-events: none; /* Permite interação com o conteúdo abaixo */
 }

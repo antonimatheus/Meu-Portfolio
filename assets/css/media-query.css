@@ -43,10 +43,6 @@
     color: var(--color4);
   }
 
-  #inicioDireito {
-    display: none;
-  }
-
   #arrow-down {
     color: var(--color5);
   }
@@ -206,10 +202,9 @@
     height: 680px;
   }
 
-
-footer {
-  background: radial-gradient(var(--color2), var(--color1));
-}
+  footer {
+    background: radial-gradient(var(--color2), var(--color1));
+  }
 
   #contact {
     display: flex;
@@ -280,10 +275,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
-  }
-
-  #inicioDireito {
-    display: none;
   }
 
   #navbar {

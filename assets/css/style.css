@@ -45,14 +45,6 @@ body {
   gap: 20px;
 }
 
-#inicioDireito {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -79,18 +71,6 @@ header::before {
   background: radial-gradient(var(--color4), var(--color3));
   opacity: 0.95; /* Ajuste este valor para mais ou menos visibilidade da imagem */
   pointer-events: none; /* Permite interação com o conteúdo abaixo */
-}
-
-#burger {
-  display: none;
-}
-
-#burgerIcon {
-  display: none;
-}
-
-#burgerList {
-  display: none;
 }
 
 #navbar {
@@ -234,39 +214,6 @@ main h1 {
 
 #designer {
   flex-direction: column;
-}
-
-.overlay {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  gap: 20px;
-}
-
-.overlay a {
-  color: var(--color3);
-  transition: 0.4s;
-}
-
-.overlay a:hover {
-  color: var(--color4);
-}
-
-/* Estilo da imagem ampliada */
-.overlay img {
-  max-width: 65vw; /* Metade da largura da viewport */
-  max-height: 65vh; /* Metade da altura da viewport */
-  object-fit: contain;
-  border-radius: 25px;
 }
 
 #designImages {

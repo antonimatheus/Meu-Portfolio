@@ -59,39 +59,3 @@ function resize() {
 
 window.onresize = resize;
 resize();
-
-// Icone do Burger
-document.getElementById("burgerIcon").addEventListener("click", () => {
-  const burgerList = document.getElementById("burgerList");
-  const openIcon = document.getElementById("openIcon");
-  const closeIcon = document.getElementById("closeIcon");
-
-  burgerList.classList.toggle("show");
-  const isShown = burgerList.classList.contains("show");
-  openIcon.style.display = isShown ? "none" : "flex";
-  closeIcon.style.display = isShown ? "flex" : "none";
-});
-
-// Seleciona todas as imagens e a div de sobreposição
-const images = document.querySelectorAll("#designImages img");
-const overlay = document.getElementById("overlay");
-const overlayImg = overlay.querySelector("img");
-
-// Função para exibir a imagem em tela
-images.forEach((image) => {
-  image.addEventListener("click", () => {
-    overlayImg.src = image.src; // Define a imagem clicada como fonte
-    overlay.style.display = "flex"; // Exibe a sobreposição
-  });
-});
-
-// Fechar a imagem ao clicar fora dela ou apertar ESC
-overlay.addEventListener("click", () => {
-  overlay.style.display = "none";
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    overlay.style.display = "none";
-  }
-});

@@ -206,6 +206,11 @@
     height: 680px;
   }
 
+
+footer {
+  background: radial-gradient(var(--color2), var(--color1));
+}
+
   #contact {
     display: flex;
     justify-content: center;

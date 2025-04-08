@@ -30,7 +30,7 @@
 body {
   font-family: var(--font1);
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   position: relative;
   overflow-x: hidden;
 }

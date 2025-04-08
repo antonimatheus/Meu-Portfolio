@@ -36,7 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
   }
 
   #inicioEsquerdo p {
@@ -141,22 +141,16 @@
   }
 
   footer {
-    background: radial-gradient(var(--color1), var(--color1));
+    background: radial-gradient( var(--color1), var(--color1));
   }
 
   #contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-attachment: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     gap: 40px;
   }
 
@@ -172,6 +166,19 @@
   #contact h1 {
     font-size: 7vw;
     text-align: center;
+    position: relative;
+  }
+
+  #contact h1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    top: -55%;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   #contact p {

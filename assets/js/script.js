@@ -40,22 +40,27 @@ document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   document.getElementById("navbar").style.backgroundColor =
-    scrollY > 0 ? "#5a2a1b" : "";
-  document.getElementById("Up").style.display = scrollY > 50 ? "flex" : "none";
+    scrollY > 0 ? "#333333" : "";
+  document.getElementById("Up").style.display = scrollY > 50 ? "flex" : "";
 });
 
-// Redimensionamento da janela
-function resize() {
-  const burgerIconMenu = document.getElementById("burgerIcon");
-  const burger = document.getElementById("burger");
-  const navDesktop = document.getElementById("navDesktop");
-  const displayState =
-    window.innerWidth >= 800 ? ["none", "flex"] : ["flex", "none"];
+// Seleciona todas as imagens dentro de .main--imgsPortfolio
+let imagesportfolio = document.querySelectorAll("#designImages img");
+const overlay = document.getElementById("overlay");
+const overlayImg = document.getElementById("overlay-img");
 
-  burgerIconMenu.style.display = displayState[0];
-  burger.style.display = displayState[0];
-  navDesktop.style.display = displayState[1];
-}
+// Função para exibir a imagem em tela cheia
+imagesportfolio.forEach((image) => {
+  image.addEventListener("click", () => {
+    overlayImg.src = image.src; // Define a imagem clicada como fonte da imagem em tela cheia
+    overlay.style.display = "flex"; // Exibe a sobreposição
+  });
+});
 
-window.onresize = resize;
-resize();
+// Fechar a imagem ao clicar fora dela
+overlay.addEventListener("click", (event) => {
+  if (event.target === overlay) {
+    // Verifica se o clique foi fora da imagem
+    overlay.style.display = "none"; // Fecha o overlay
+  }
+});

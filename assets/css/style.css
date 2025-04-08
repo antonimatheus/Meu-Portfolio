@@ -1,17 +1,23 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --font1: "Ubuntu", sans-serif;
+  font-family: "Inter", sans-serif;
 
-  --color1: #5a2a1b; /* Vermelho terroso – mais quente e forte */
-  --color2: #b05e2e; /* Laranja queimado – mais saturado, vibrante */
-  --color3: #f2b455; /* Dourado vibrante – mais luz, mais destaque */
-  --color4: #faf7f3; /* Cinza quase branco – ainda neutro, mas mais luminoso */
-  --color5: #1f5c45; /* Verde profundo – mais vida e personalidade */
+  --color1: #d7a166; /* PrincipalColor – um tom quente e suave de laranja */
+  --color2: #ffffff; /* Branco puro – ideal para contrastes */
+  --color3: #333333; /* Cinza escuro – ótimo para textos ou fundos */
+  --color4: #1f1f1f; /* Cinza mais escuro – quase preto, forte e elegante */
+  --color5: #141414; /* OffBlack – preto com um toque suave, moderno */
 
-  /* 
+  /*
+  --PrincipalColor: hsl(29, 57%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+
     --color1:#000000;
     --color2:#271E14;
     --color3:#B68F63;
@@ -68,7 +74,8 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(var(--color4), var(--color3));
+  background: radial-gradient(var(--color3), var(--color3));
+  background: radial-gradient(hsla(0, 0%, 20%, 0.5), hsla(0, 0%, 20%, 0.6));
   opacity: 0.95; /* Ajuste este valor para mais ou menos visibilidade da imagem */
   pointer-events: none; /* Permite interação com o conteúdo abaixo */
 }
@@ -90,7 +97,7 @@ header::before {
   font-size: 20px;
   text-decoration: none;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-  color: var(--color4);
+  color: var(--color2);
   transition: all 0.4s ease-in-out;
 }
 
@@ -112,11 +119,11 @@ li a {
 }
 
 #navbar li a:hover {
-  color: var(--color4);
+  color: var(--color1);
 }
 
 #navbar li a:active {
-  color: var(--color4);
+  color: var(--color1);
 }
 
 #navbar li a::after {
@@ -127,7 +134,7 @@ li a {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: var(--color4);
+  background-color: var(--color1);
   transition: width 0.4s ease-in-out;
 }
 
@@ -149,7 +156,7 @@ li a {
 }
 
 #web i:hover {
-  color: var(--color3);
+  color: var(--color2);
   text-shadow: none;
   transform: translateY(-5px);
 }
@@ -161,7 +168,7 @@ li a {
   font-size: 23px;
   font-weight: 500;
   color: var(--color2);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
 }
 
 #title {
@@ -202,14 +209,29 @@ main {
   flex-direction: column;
   width: 100vw;
   background: radial-gradient(circle, var(--color4), var(--color3));
-  background: var(--color3);
+  background: var(--color2);
 }
 
 main h1 {
   font-size: 50px;
   margin: 20px;
   color: var(--color1);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
+}
+
+main h2 {
+  font-size: 30px;
+  margin: 20px;
+  color: var(--color1);
+  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
+}
+
+main p {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0px 20px;
+  color: var(--color3);
+  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
 }
 
 #designer {
@@ -233,22 +255,79 @@ main h1 {
   width: 355px;
   height: 430px;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 #designer p a {
-  color: var(--color2);
+  color: var(--color1);
   transition: 0.4s;
 }
 
 #designer p a:hover {
-  color: var(--color4);
+  color: var(--color3);
 }
 
 #imgwebsite {
   display: flex;
   margin: 0 auto;
   width: 33vw;
+}
+
+.designImages {
+  position: relative; /* Necessário para os elementos posicionados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%; /* Define a largura de cada imagem */
+  max-width: 880px;
+  height: auto; /* Define a altura fixa */
+  cursor: pointer;
+  overflow: hidden; /* Evita transbordamento */
+  background-color: rgb(221, 221, 221);
+}
+
+.designImages img {
+  width: 100%; /* Garante que a imagem preencha o contêiner */
+  height: 100%; /* Garante que a imagem preencha o contêiner */
+  object-fit: cover; /* Evita distorção da imagem */
+  transition: transform 0.3s ease; /* Suaviza o zoom */
+}
+
+.designImages::after {
+  background-color: #16161600;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100lvh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.overlay a {
+  font-weight: 300;
+  color: rgb(185, 185, 185);
+}
+
+.overlay p {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgb(185, 185, 185);
+}
+
+#overlay-img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 20px;
 }
 
 .inputChange {
@@ -260,15 +339,15 @@ main h1 {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  color: var(--color4);
-  background-color: var(--color2);
+  color: var(--color2);
+  background-color: var(--color3);
   transition: 0.4s;
   cursor: pointer;
 }
 
 .inputChange:focus {
-  color: var(--color4);
-  background-color: var(--color1);
+  color: var(--color2);
+  background-color: var(--color5);
 }
 
 .repositorio {
@@ -281,20 +360,20 @@ main h1 {
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   color: var(--color3);
-  background-color: var(--color5);
+  background-color: var(--color1);
   transition: 0.4s;
   cursor: pointer;
 }
 
 .repositorio:hover {
-  background-color: var(--color4);
+  background-color: var(--color3);
 }
 
 #imgBlock1 img,
 #imgBlock2 img,
 #imgBlock3 img,
 #imgBlock4 img {
-  animation: filter 0.5s ease; /* Add a smooth transition effect */
+  animation: filter 0.3s ease; /* Add a smooth transition effect */
 }
 
 @keyframes filter {
@@ -316,7 +395,9 @@ main h1 {
 }
 
 #imgs-container p {
-  color: var(--color5);
+  color: var(--color1);
+  font-weight: 600;
+  text-shadow: none;
 }
 
 #imgs-container h3 {
@@ -324,8 +405,8 @@ main h1 {
   text-align: center;
   margin: 8px;
   margin-bottom: 50px;
-  color: var(--color4);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  color: var(--color3);
+  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
 }
 
 .imgs img {
@@ -341,7 +422,7 @@ main h1 {
 
 .imgs img:hover {
   transform: scale(1.01);
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
 
 .img-block {
@@ -399,22 +480,7 @@ main h1 {
   height: 800px;
   margin: 10px;
   border-radius: 20px;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-}
-
-main h2 {
-  font-size: 30px;
-  margin: 20px;
-  color: var(--color1);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-}
-
-main p {
-  font-size: 19px;
-  font-weight: 500;
-  margin: 0px 20px;
-  color: var(--color4);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/
 }
 
 footer {
@@ -423,7 +489,35 @@ footer {
   align-items: center;
   width: 100vw;
   height: 100%;
-  background: radial-gradient(var(--color3), var(--color1) 75%);
+  background: radial-gradient(var(--color1), var(--color1));
+}
+
+footer h2 {
+  font-size: 35px;
+  color: var(--color3);
+}
+
+footer h1 {
+  font-size: 45px;
+  color: var(--color2);
+}
+
+footer p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color3);
+}
+
+footer a:hover {
+  color: var(--color4);
+}
+
+#img-contact {
+  display: flex;
+  background: url(../images/New\ message-amico.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #contact {
@@ -459,27 +553,18 @@ footer {
 
 #whatsApp p {
   font-weight: bold;
-  color: var(--color1);
+  color: var(--color2);
 }
 
 #whatsApp i {
   font-size: 30px;
-  color: var(--color1);
+  color: var(--color2);
 }
 
 #whatsApp:hover {
   letter-spacing: 3px;
-  background-color: var(--color5);
+  background-color: var(--color3);
   box-shadow: var(--color5) 0px 7px 19px 0px;
-}
-
-#whatsApp:active {
-  letter-spacing: 3px;
-  background-color: var(--color5);
-  color: var(--color5);
-  box-shadow: rgb(125, 238, 125) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
 }
 
 #img-contact {
@@ -487,25 +572,6 @@ footer {
   flex-direction: column;
   width: 45vw;
   height: 100vh;
-}
-
-footer h2 {
-  font-size: 35px;
-  color: var(--color3);
-}
-
-footer h1 {
-  font-size: 45px;
-  color: var(--color4);
-}
-
-footer p {
-  font-size: 18px;
-  color: var(--color4);
-}
-
-footer a:hover {
-  color: var(--color4);
 }
 
 @keyframes toUpAnimation {
@@ -529,8 +595,8 @@ footer a:hover {
   padding: 20px;
   gap: 20px;
   color: var(--color2);
+  background-color: var(--color3);
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
-  background-color: var(--color4);
 }
 
 #CopyrightTitle {
@@ -552,8 +618,8 @@ footer a:hover {
   font-size: 25px;
   color: var(--color1);
   cursor: pointer;
-  background-color: var(--color3);
-  padding: 7px;
+  background-color: var(--color5);
+  padding: 10px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
@@ -568,14 +634,6 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#img-contact {
-  display: flex;
-  background: url(../images/New\ message-amico.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .hidden {

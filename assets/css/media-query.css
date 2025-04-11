@@ -45,6 +45,7 @@
 
   #arrow-down {
     color: var(--color1);
+    top: 80%;
   }
 
   #navbar {
@@ -69,7 +70,7 @@
   }
 
   #title i {
-    width: 7vw;
+    width: 5vw;
   }
 
   #apresentacion {

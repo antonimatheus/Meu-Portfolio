@@ -64,3 +64,31 @@ overlay.addEventListener("click", (event) => {
     overlay.style.display = "none"; // Fecha o overlay
   }
 });
+
+const track = document.querySelector('.carousel-track');
+
+// Duplicar os elementos
+track.innerHTML += track.innerHTML;
+
+// Função que adiciona os eventos de clique
+function addImageClickEvents() {
+  const allImages = document.querySelectorAll('#designImages img');
+
+  allImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      overlay.style.display = 'flex';
+      overlayImg.src = img.src;
+    });
+  });
+}
+
+// Adiciona os eventos nas imagens originais e duplicadas
+addImageClickEvents();
+
+// Fechar overlay ao clicar fora da imagem
+overlay.addEventListener('click', (e) => {
+  if (e.target !== overlayImg) {
+    overlay.style.display = 'none';
+    overlayImg.src = '';
+  }
+});

@@ -242,7 +242,6 @@ main p {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
-  margin: 20px;
 }
 
 #designImages div {
@@ -273,18 +272,43 @@ main p {
   width: 33vw;
 }
 
-.designImages {
-  position: relative; /* Necessário para os elementos posicionados */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%; /* Define a largura de cada imagem */
-  max-width: 880px;
-  height: auto; /* Define a altura fixa */
-  cursor: pointer;
-  overflow: hidden; /* Evita transbordamento */
-  background-color: rgb(221, 221, 221);
+
+
+
+
+#designImages {
+  overflow: hidden;
+  width: 100%;
 }
+
+.carousel-track {
+  display: flex;
+  animation: scrollInfinite 60s linear infinite;
+}
+
+.carousel-track div {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+.carousel-track img {
+  width: 355px;
+  height: 430px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 
 .designImages img {
   width: 100%; /* Garante que a imagem preencha o contêiner */

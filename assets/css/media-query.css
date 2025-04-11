@@ -169,16 +169,8 @@
     position: relative;
   }
 
-  #contact h1::after {
-    content: '';
-    position: absolute;
-    width: 150px;
-    height: 6px;
-    border-radius: 10px;
-    background-color: var(--color2);
-    top: -55%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+  #contact h2 {
+    text-decoration: underline 5px var(--color2);
   }
 
   #contact p {

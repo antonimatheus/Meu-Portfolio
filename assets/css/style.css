@@ -61,7 +61,7 @@ header {
 
 header {
   position: relative;
-  background: url(../images/backgroundCell.jpg);
+  background: url(../images/backgroundDesktop.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -75,8 +75,7 @@ header::before {
   width: 100%;
   height: 100%;
   background: radial-gradient(var(--color3), var(--color3));
-  background: radial-gradient(hsla(0, 0%, 20%, 0.8), hsla(0, 0%, 20%, 0.8));
-  opacity: 0.95; /* Ajuste este valor para mais ou menos visibilidade da imagem */
+  background: radial-gradient(hsla(0, 0%, 20%, 0.6), hsla(0, 0%, 20%, 0.6));
   pointer-events: none; /* Permite interação com o conteúdo abaixo */
 }
 
@@ -272,10 +271,6 @@ main p {
   width: 33vw;
 }
 
-
-
-
-
 #designImages {
   overflow: hidden;
   width: 100%;
@@ -307,8 +302,6 @@ main p {
     transform: translateX(-50%);
   }
 }
-
-
 
 .designImages img {
   width: 100%; /* Garante que a imagem preencha o contêiner */

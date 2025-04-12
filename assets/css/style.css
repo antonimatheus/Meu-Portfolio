@@ -152,12 +152,24 @@ li a {
   font-size: 50px;
   margin: 0px 15px;
   transition: 0.5s;
+  animation: blinkWhite 2s infinite ease-in;
 }
 
 #web i:hover {
   color: var(--color2);
   text-shadow: none;
   transform: translateY(-5px);
+}
+
+/* Animação de piscar em branco */
+@keyframes blinkWhite {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.35);
+  }
 }
 
 #inicioEsquerdo p {

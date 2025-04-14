@@ -108,7 +108,8 @@
     text-align: center;
   }
 
-  main h2 {
+  #interactiveWebSites--title {
+    font-size: 7vw;
     text-align: center;
   }
 
@@ -245,7 +246,8 @@
     font-size: 30px;
   }
 
-  main h2 {
+  #interactiveWebSites--title {
+    font-size: 4.5vw;
     text-align: center;
   }
 

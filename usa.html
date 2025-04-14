@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Antoni Matheus - Front-End Developer & Designer Portfolio. Modern websites and designs that bring ideas to life."
+    />
+    <meta name="author" content="Antoni Matheus" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Antoni´s Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/profile-pic.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media-query.css" />
+    <link rel="stylesheet" href="./assets/css/email.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="body1">
+      <header id="home">
+        <nav id="navbar">
+          <div id="navDesktop">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#designer">Designs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div id="container">
+          <div id="inicioEsquerdo">
+            <p class="hidden">
+              Hey, my name is Antoni!
+              <picture>
+                <source
+                  srcset="
+                    https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif"
+                  alt="👋"
+                  width="30"
+                  height="30"
+                />
+              </picture>
+            </p>
+            <div id="title" class="hidden">
+              <h1 id="web">
+                WEB
+                <a
+                  href="https://www.linkedin.com/in/antoni-matheus-a5a3b4230/"
+                  target="_blank"
+                  title="Linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/antonimatheus"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="assets/CurriculoDevAntoniMatheus - EN.pdf"
+                  download
+                  title="Resume"
+                >
+                  <i class="fa-solid fa-file"></i>
+                </a>
+              </h1>
+              <h1>DEVELOPER</h1>
+            </div>
+            <div id="apresentacion" class="hidden">
+              <p>
+                I create visually stunning and high-performance websites &
+                designs that bring ideas to life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="arrow-down">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </header>
+      <main>
+        <h1 id="projects" class="hidden">Projects</h1>
+        <p class="hidden">Responsive and Modern Projects.</p>
+        <div id="imgs-container">
+          <div class="img-block">
+            <!-- Image-->
+            <a
+              href="https://sunnysidelandingpage-am.netlify.app"
+              target="_blank"
+              ><!-- Resolving an error-->
+              <div class="imgs hidden" id="imgBlock1">
+                <img
+                  src="assets/images/sunnyside-desktop.webp"
+                  alt="web1"
+                  id="project1Desk"
+                />
+                <img
+                  src="assets/images/sunnyside-mobile.webp"
+                  alt="web1"
+                  id="project1Mobile"
+                />
+              </div>
+            </a>
+
+            <!-- Buttons to change the image-->
+            <span class="deskMobi">
+              <input
+                type="button"
+                value="Desktop"
+                id="desk1"
+                class="inputChange hidden"
+              />
+              <input
+                type="button"
+                value="Mobile"
+                id="mob1"
+                class="inputChange hidden"
+              />
+              <a
+                href="https://github.com/antonimatheus/Sunnyside-agency-landing-page"
+                target="_blank"
+                ><input
+                  type="button"
+                  value="Repository"
+                  id="mob1"
+                  class="repositorio hidden"
+              /></a>
+            </span>
+
+            <p class="hidden">
+              React Project <i class="fa-brands fa-react"></i>
+            </p>
+            <h3 class="hidden">
+              A sleek and modern website for Sunnyside Agency, designed to
+              showcase its services with a clean, minimalist approach for an
+              intuitive user experience.
+            </h3>
+          </div>
+
+          <div class="img-block">
+            <!-- Image-->
+            <a href="https://loopstudiosbr.netlify.app/" target="_blank">
+              <div class="imgs hidden" id="imgBlock2">
+                <img
+                  src="assets/images/loopstudios-desktop.webp"
+                  alt="web2"
+                  id="project2Desk"
+                />
+                <img
+                  src="assets/images/loopstudios-mobile.webp"
+                  alt="web2"
+                  id="project2Mobile"
+                />
+              </div>
+            </a>
+
+            <!-- Buttons to change the image-->
+            <span class="deskMobi">
+              <input
+                type="button"
+                value="Desktop"
+                id="desk2"
+                class="inputChange hidden"
+              />
+              <input
+                type="button"
+                value="Mobile"
+                id="mob2"
+                class="inputChange hidden"
+              />
+              <a
+                href="https://github.com/antonimatheus/Loop-Studios"
+                target="_blank"
+                ><input
+                  type="button"
+                  value="Repository"
+                  id="mob1"
+                  class="repositorio hidden"
+              /></a>
+            </span>
+
+            <p class="hidden">
+              React Project <i class="fa-brands fa-react"></i>
+            </p>
+            <h3 class="hidden">
+              An immersive website for Loopstudios, crafted to showcase its
+              services in a dynamic and engaging way for clients.
+            </h3>
+          </div>
+
+          <div class="img-block">
+            <!-- Image-->
+            <a href="https://sneakerproduct.netlify.app" target="_blank">
+              <div class="imgs hidden" id="imgBlock3">
+                <img
+                  src="assets/images/sneakers-desktop.webp"
+                  alt="web3"
+                  id="project3Desk"
+                />
+                <img
+                  src="assets/images/sneakers-mobile.webp"
+                  alt="web3"
+                  id="project3Mobile"
+                />
+              </div>
+            </a>
+
+            <!-- Buttons to change the image-->
+            <span class="deskMobi">
+              <input
+                type="button"
+                value="Desktop"
+                id="desk3"
+                class="inputChange hidden"
+              />
+              <input
+                type="button"
+                value="Mobile"
+                id="mob3"
+                class="inputChange hidden"
+              />
+              <a
+                href="https://github.com/antonimatheus/E-commerce-product-page"
+                target="_blank"
+                ><input
+                  type="button"
+                  value="Repository"
+                  id="mob1"
+                  class="repositorio hidden"
+              /></a>
+            </span>
+
+            <p class="hidden">
+              React Project <i class="fa-brands fa-react"></i>
+            </p>
+            <h3 class="hidden">
+              A sleek e-commerce sneaker product page featuring a dynamic
+              product display, seamless cart integration, and a smooth checkout
+              experience.
+            </h3>
+          </div>
+
+          <div class="img-block">
+            <!-- Image-->
+            <a href="https://spacetourismwebpage.netlify.app" target="_blank">
+              <div class="imgs hidden" id="imgBlock4">
+                <img
+                  src="assets/images/space-desktop.webp"
+                  alt="web4"
+                  id="project4Desk"
+                />
+                <img
+                  src="assets/images/space-mobile.webp"
+                  alt="web4"
+                  id="project4Mobile"
+                />
+              </div>
+            </a>
+
+            <!-- Buttons to change the image-->
+            <span class="deskMobi">
+              <input
+                type="button"
+                value="Desktop"
+                id="desk4"
+                class="inputChange hidden"
+              />
+              <input
+                type="button"
+                value="Mobile"
+                id="mob4"
+                class="inputChange hidden"
+              />
+              <a
+                href="https://github.com/antonimatheus/Space-tourism-multi-page-website"
+                target="_blank"
+                ><input
+                  type="button"
+                  value="Repository"
+                  id="mob1"
+                  class="repositorio hidden"
+              /></a>
+            </span>
+
+            <p class="hidden">
+              React Project <i class="fa-brands fa-react"></i>
+            </p>
+            <h3 class="hidden">
+              A modern and minimalist space agency website showcasing
+              destinations, crew, and cutting-edge technologies in a clear and
+              engaging way.
+            </h3>
+          </div>
+        </div>
+
+        <div id="designer">
+          <h1 class="hidden">I also make designs!</h1>
+          <p class="hidden">
+            These are just a few examples. Explore more on my website!
+            <span>
+              <a href="https://antonisdesign.netlify.app/" target="_blank">
+                Click here and see more!
+              </a>
+            </span>
+          </p>
+
+          <!-- images -->
+          <div id="designImages" class="hidden">
+            <div class="carousel-track">
+              <div>
+                <img src="assets/images/criativos/Fut10.jpg" alt="img" />
+              </div>
+              <div>
+                <img
+                  src="assets/images/criativos/burguerHallowen.png"
+                  alt="img"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/criativos/ANA-RONCATTO-STORIE.jpg"
+                  alt="img"
+                />
+              </div>
+              <div>
+                <img src="assets/images/criativos/ayrtonsenna.jpg" alt="img" />
+              </div>
+              <div>
+                <img
+                  src="assets/images/criativos/AMANDA-BIUGER.jpg"
+                  alt="img"
+                />
+              </div>
+              <div>
+                <img src="assets/images/criativos/acai.jpg" alt="img" />
+              </div>
+              <div>
+                <img
+                  src="assets/images/criativos/Roncatto-feed2.jpg"
+                  alt="img"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/criativos/chocolate-quente.jpg"
+                  alt="img"
+                />
+              </div>
+              <div>
+                <img src="assets/images/criativos/burger.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="assets/images/criativos/the-rocky.jpg" alt="img" />
+              </div>
+              <div>
+                <img src="assets/images/criativos/Antony.jpg" alt="img" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Overlay para exibição das imagens em tela cheia -->
+          <div id="overlay" class="overlay">
+            <a href="https://antonisdesign.netlify.app/"
+              >click here to see more!</a
+            >
+            <img id="overlay-img" src="" alt="Imagem em tela cheia" />
+            <p>Click anywhere outside the image to close*</p>
+          </div>
+        </div>
+
+        <h1 class="hidden" id="interactiveWebSites--title">
+          Interactive Web Sites
+        </h1>
+        <p class="hidden">You can interact with these examples!</p>
+
+        <div id="iframe-container" class="hidden" aria-hidden="true">
+          <div class="iframes">
+            <iframe
+              src="https://spacetourismwebpage.netlify.app/"
+              frameborder="0"
+              title="Projeto de Turismo Espacial"
+            ></iframe>
+          </div>
+
+          <div class="iframes">
+            <iframe
+              src="https://loopstudiosbr.netlify.app/"
+              frameborder="0"
+              title="Página de Estúdios Loop"
+            ></iframe>
+          </div>
+
+          <div class="iframes">
+            <iframe
+              src="https://myfoodlandingpage.netlify.app/"
+              frameborder="0"
+              title="Landing Page de Alimentos"
+            ></iframe>
+          </div>
+
+          <div class="iframes">
+            <iframe
+              src="https://ticketgenerate.netlify.app/"
+              frameborder="0"
+              title="Gerador de Ingressos"
+            ></iframe>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div id="contact" class="hidden">
+          <h2 class="hidden">Contact</h2>
+          <h1 class="hidden">Do you have a project or problem to solve?</h1>
+          <p class="hidden">
+            Your ideas deserve attention! Let me help bring them to life! 🚀
+          </p>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=5566999257769&text=Ol%C3%A1%2C%20Antoni!%20Quero%20fazer%20um%20projeto!%20%F0%9F%98%81"
+            id="whatsApp"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>Contact ME</p>
+          </a>
+
+          <div id="background-footer"></div>
+        </div>
+
+        <div id="img-contact" class="hidden"></div>
+      </footer>
+      <div id="Copyright">
+        <div id="CopyrightTitle" class="hidden">
+          <h1>Interested in me?</h1>
+          <p>Follow my social media!</p>
+        </div>
+        <div id="CopyrightMedia" class="hidden">
+          <div>
+            <a href="https://antonisociallink.netlify.app/" target="_blank">
+              <i class="fa-solid fa-tree"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/antonii.design/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div id="CopyrightRights" class="hidden">
+          <p>Copyright © 2025 by Antoni Matheus.</p>
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

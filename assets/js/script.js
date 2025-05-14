@@ -67,8 +67,12 @@ overlay.addEventListener("click", (event) => {
 
 const track = document.querySelector(".carousel-track");
 
-// Duplicar os elementos
-track.innerHTML += track.innerHTML;
+// Duplicar os elementos corretamente com cloneNode
+const items = [...track.children];
+items.forEach(item => {
+  const clone = item.cloneNode(true);
+  track.appendChild(clone);
+});
 
 // Função que adiciona os eventos de clique
 function addImageClickEvents() {

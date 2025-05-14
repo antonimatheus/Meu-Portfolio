@@ -293,6 +293,10 @@ main p {
   animation: scrollInfinite 60s linear infinite;
 }
 
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
 .carousel-track div {
   flex: 0 0 auto;
   margin: 0 10px;
@@ -304,6 +308,7 @@ main p {
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   object-fit: cover;
+  cursor: pointer;
 }
 
 @keyframes scrollInfinite {
@@ -314,6 +319,7 @@ main p {
     transform: translateX(-50%);
   }
 }
+
 
 .designImages img {
   width: 100%; /* Garante que a imagem preencha o contêiner */

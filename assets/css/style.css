@@ -510,6 +510,30 @@ main p {
   margin: 20px;
 }
 
+.iframes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframes div {
+  display: flex;
+}
+
+.iframes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color5);
+  padding: 3px;
+  transition: .3s;
+}
+
+.iframes a:hover {
+  color: var(--color3);
+}
+
 .iframes iframe {
   display: inline-block;
   width: 29vw;

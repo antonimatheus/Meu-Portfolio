@@ -219,6 +219,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  height: 100%;
   background: radial-gradient(circle, var(--color4), var(--color3));
   background: var(--color2);
 }
@@ -319,7 +320,6 @@ main p {
     transform: translateX(-50%);
   }
 }
-
 
 .designImages img {
   width: 100%; /* Garante que a imagem preencha o contêiner */
@@ -527,7 +527,7 @@ main p {
   align-items: center;
   color: var(--color5);
   padding: 3px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .iframes a:hover {
@@ -590,34 +590,90 @@ footer a:hover {
   gap: 45px;
 }
 
+form {
+  background-color: var(--color2);
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:var(--color3);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: var(--color5);
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #25d366;
+  color: var(--color2);
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ebc59;
+}
+
+/* NOVO: container para centralizar o botão do WhatsApp */
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 #whatsApp {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  gap: 5px;
-  width: 70%;
-  height: 70px;
-  padding: 17px 40px;
+  width: 75%;
+  height: 50px;
   border-radius: 50px;
-  cursor: pointer;
   border: 0;
   background-color: rgb(125, 238, 125);
   box-shadow: rgb(125, 238, 125) 0px 7px 29px 0px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-size: 15px;
   transition: all 0.5s ease;
+  gap: 5px;
+  cursor: pointer;
 }
 
 #whatsApp p {
   font-weight: bold;
-  color: var(--color2);
-}
-
-#whatsApp i {
-  font-size: 30px;
   color: var(--color2);
 }
 

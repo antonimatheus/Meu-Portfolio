@@ -454,16 +454,22 @@
             Your ideas deserve attention! Let me help bring them to life! 🚀
           </p>
 
-          <h3>antonimatheusofc@gmail.com</h3>
+          <form action="https://formsubmit.co/antonimatheusofc@gmail.com" method="POST">
+            <label for="nome">Your name:</label>
+            <input type="text" placeholder="John" name="nome" id="nome" required>
 
-          <a
-            href="https://api.whatsapp.com/send?phone=5566999257769&text=Ol%C3%A1%2C%20Antoni!%20Quero%20fazer%20um%20projeto!%20%F0%9F%98%81"
-            id="whatsApp"
-            target="_blank"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>Contact ME</p>
-          </a>
+            <label for="nome">Email:</label>
+            <input type="email" placeholder="example@gmail.com" name="email" id="email" required>
+
+            <label for="mensagem">Your message:</label>
+            <textarea placeholder="Write your message here..." name="mensagem" id="mensagem" required></textarea>
+
+            <div class="btn-container">
+              <button type="submit" id="whatsApp">
+                <p>Send message</p>
+              </button>
+            </div>
+          </form>
 
           <div id="background-footer"></div>
         </div>

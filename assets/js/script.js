@@ -88,11 +88,3 @@ function addImageClickEvents() {
 
 // Adiciona os eventos nas imagens originais e duplicadas
 addImageClickEvents();
-
-// Fechar overlay ao clicar fora da imagem
-overlay.addEventListener("click", (e) => {
-  if (e.target !== overlayImg) {
-    overlay.style.display = "none";
-    overlayImg.src = "";
-  }
-});

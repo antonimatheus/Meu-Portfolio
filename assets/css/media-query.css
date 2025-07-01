@@ -154,6 +154,10 @@
     height: 100vh;
     gap: 40px;
   }
+  
+  form {
+    width: 90%;
+  }
 
   #whatsApp {
     width: 80%;
@@ -286,7 +290,7 @@
   #contact {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -296,6 +300,10 @@
     background-attachment: fixed;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
     gap: 40px;
+  }
+
+  form {
+    width: 50%;
   }
 
   #whatsApp {

@@ -49,7 +49,7 @@
         <div id="container">
           <div id="inicioEsquerdo">
             <p class="hidden">
-              Hey, meu nome é Antoni!
+              Olá, meu nome é Antoni!
               <picture>
                 <source
                   srcset="
@@ -453,16 +453,22 @@
             🚀
           </p>
 
-          <h3>antonimatheusofc@gmail.com</h3>
+          <form action="https://formsubmit.co/antonimatheusofc@gmail.com" method="POST">
+            <label for="nome">Seu nome:</label>
+            <input type="text" placeholder="João" name="nome" id="nome" required>
 
-          <a
-            href="https://api.whatsapp.com/send?phone=5566999257769&text=Ol%C3%A1%2C%20Antoni!%20Quero%20fazer%20um%20projeto!%20%F0%9F%98%81"
-            id="whatsApp"
-            target="_blank"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>Fale Comigo</p>
-          </a>
+            <label for="nome">Email:</label>
+            <input type="email" placeholder="exemplo@gmail.com" name="email" id="email" required>
+
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea placeholder="Escreva a sua mensagem aqui..." name="mensagem" id="mensagem" required></textarea>
+
+            <div class="btn-container">
+              <button type="submit" id="whatsApp">
+                <p>Enviar mensagem</p>
+              </button>
+            </div>
+          </form>
 
           <div id="background-footer"></div>
         </div>

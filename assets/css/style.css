@@ -536,8 +536,8 @@ main p {
 
 .iframes iframe {
   display: inline-block;
-  width: 29vw;
-  height: 800px;
+  width: 360px;
+  height: 740px;
   margin: 10px;
   border-radius: 20px;
   /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);*/

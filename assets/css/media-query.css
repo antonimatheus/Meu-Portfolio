@@ -138,7 +138,7 @@
 
   .iframes iframe {
     width: 360px;
-    height: 680px;
+    height: 740px;
   }
 
   footer {
@@ -157,10 +157,6 @@
   
   form {
     width: 90%;
-  }
-
-  #whatsApp {
-    width: 80%;
   }
 
   #contacth2 {
@@ -303,10 +299,6 @@
   }
 
   form {
-    width: 50%;
-  }
-
-  #whatsApp {
     width: 50%;
   }
 

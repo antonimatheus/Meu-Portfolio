@@ -184,6 +184,10 @@
     font-size: 18px;
   }
 
+  #whatsApp {
+    width: 100%;
+  }
+
   #img-contact {
     display: none;
   }
@@ -328,4 +332,9 @@
   #img-contact img {
     display: none;
   }
+
+  #whatsApp {
+    width: 70%;
+  }
+
 }
